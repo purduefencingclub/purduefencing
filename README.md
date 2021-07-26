@@ -1,1 +1,1 @@
-# purduefencing
+# Purdue Fencing Club Website
