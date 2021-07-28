@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Homemade+Apple&family=Oswald:wght@500&display=swap");
 .navlink {
   color: white !important;
   margin-left: 30px;
   font-weight: bold;
   font-size: 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 .navlink:hover {
@@ -24,12 +23,14 @@
 .heading-purdue {
   color: white;
   font-size: 80px;
-  margin-bottom: -30px;
-  font-family: "Kaushan Script", cursive;
+  margin-bottom: -60px;
+  margin-left: 10px;
+  font-family: "Dancing Script", cursive;
 }
 
 .heading-fencing {
   color: white;
   font-size: 140px;
   font-weight: bold;
+  font-family: "Oswald", sans-serif;
 }
