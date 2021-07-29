@@ -1,12 +1,14 @@
 import React from "react";
-import { Nav } from "react-bootstrap";
-import Navigation from "../components/Navigation";
+import Header from "../components/Header";
+import "../styles/index.css";
 
 const Index = () => (
-  <div>
-    <Navigation></Navigation>
-    <h1>Home</h1>
-  </div>
+  <>
+    <Header></Header>
+    <div>
+      <h1>home</h1>
+    </div>
+  </>
 );
 
 export default Index;

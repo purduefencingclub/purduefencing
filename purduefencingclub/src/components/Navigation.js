@@ -6,8 +6,8 @@ import Logo from "../nasa.png";
 import "../styles/index.css";
 
 const Navigation = () => (
-  <div className="navWrapper">
-    <Navbar>
+  <div>
+    <Navbar className="nav-primary">
       <Container>
         <Row>
           <LinkContainer to="/">
@@ -24,37 +24,28 @@ const Navigation = () => (
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav>
               <LinkContainer to="/">
-                <Nav.Link className="navlink">Home</Nav.Link>
+                <Nav.Link className="navlink">HOME</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/about">
-                <Nav.Link className="navlink">Officers</Nav.Link>
+                <Nav.Link className="navlink">OFFICERS</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/about">
-                <Nav.Link className="navlink">About</Nav.Link>
+                <Nav.Link className="navlink">ABOUT</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/about">
-                <Nav.Link className="navlink">Join Us</Nav.Link>
+                <Nav.Link className="navlink">JOIN US</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/about">
-                <Nav.Link className="navlink">Contact</Nav.Link>
+                <Nav.Link className="navlink">CONTACT</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/about">
-                <Nav.Link className="navlink">Resources</Nav.Link>
+                <Nav.Link className="navlink">RESOURCES</Nav.Link>
               </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Row>
       </Container>
     </Navbar>
-    <br />
-    <Container>
-      <p className="heading-purdue">Purdue</p>
-    </Container>
-    <Container>
-      <Row>
-        <p className="heading-fencing">FENCING</p>
-      </Row>
-    </Container>
   </div>
 );
 

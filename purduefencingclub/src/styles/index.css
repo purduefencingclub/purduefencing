@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Homemade+Apple&family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Homemade+Apple&family=Noto+Serif&family=Oswald:wght@500&display=swap");
+
 .navlink {
-  color: white !important;
+  color: rgba(48, 47, 47, 0.911) !important;
   margin-left: 30px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
   font-family: "Oswald", sans-serif;
 }
 
@@ -11,21 +12,24 @@
   color: white !important;
 }
 .navWrapper {
-  height: 600px;
-  background: linear-gradient(to right, #fff347ab, #fff347ab),
+  height: 640px;
+  background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
     url("https://static.wixstatic.com/media/95c7c7_a0c895b386a746438646f5f33e6a42a1~mv2_d_2048_1366_s_2.jpg/v1/fill/w_980,h_528,al_c,q_85,usm_0.66_1.00_0.01/95c7c7_a0c895b386a746438646f5f33e6a42a1~mv2_d_2048_1366_s_2.webp")
       no-repeat top center;
   background-repeat: no-repeat;
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 52%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  padding-left: 2000;
 }
 
+.nav-cut {
+}
 .heading-purdue {
-  color: white;
-  font-size: 80px;
+  color: rgb(56, 56, 56);
+  font-size: 65px;
   margin-bottom: -60px;
-  margin-left: 10px;
-  font-family: "Dancing Script", cursive;
+  margin-left: 3px;
+  font-family: "Noto Serif", serif;
 }
 
 .heading-fencing {
@@ -33,4 +37,49 @@
   font-size: 140px;
   font-weight: bold;
   font-family: "Oswald", sans-serif;
+}
+
+.nav-primary {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.header-text {
+  margin-left: 200px;
+  margin-top: 70px;
+}
+
+.join-text {
+  color: black !important;
+  font-family: "Oswald", sans-serif;
+  background-attachment: fixed;
+}
+
+.join-text:hover {
+  color: white !important;
+}
+
+.join {
+  margin-top: -30px;
+}
+
+.join-button {
+  /* background-color: rgba(48, 47, 47, 0.911) !important; */
+}
+
+.secondary-nav {
+  height: 500px;
+  background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
+    url("../background1.png") no-repeat top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 2000;
+}
+
+.heading-about {
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  padding-top: 25px;
 }
