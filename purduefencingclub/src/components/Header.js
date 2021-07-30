@@ -29,7 +29,7 @@ const Header = () => (
       <div className="join">
         <Container>
           <Row>
-            <LinkContainer to="/about">
+            <LinkContainer to="/join">
               <Nav.Link className="join-text">
                 <Button
                   variant="dark primary"

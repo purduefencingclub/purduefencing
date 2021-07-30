@@ -22,8 +22,6 @@
   padding-left: 2000;
 }
 
-.nav-cut {
-}
 .heading-purdue {
   color: rgb(56, 56, 56);
   font-size: 65px;
@@ -82,4 +80,116 @@
   font-weight: bold;
   font-family: "Oswald", sans-serif;
   padding-top: 25px;
+}
+
+.home-intro {
+  width: 1030px;
+  font-family: "Oswald", sans-serif;
+}
+
+.home-text {
+  font-size: 20px;
+  font-family: "Oswald", sans-serif, bold;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.university-header {
+  text-align: center;
+}
+
+.universities {
+  width: 1030px;
+}
+
+.uni-logo {
+  height: 150px;
+}
+
+.about-header {
+  font-size: 50px;
+}
+
+.about-intro {
+  width: 1030px;
+  font-family: "Oswald", sans-serif;
+}
+
+.image-row-3 {
+  padding: 0;
+}
+
+.image-center {
+  padding-right: 53px;
+  padding-left: 53px;
+}
+
+.work-improvement {
+  text-align: center;
+}
+
+.work-text {
+  background-color: pink;
+  width: 100px;
+  text-align: center;
+}
+
+.officer-nav {
+  height: 500px;
+  background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
+    url("../officer-bg.jpeg") no-repeat top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 2000;
+}
+
+.officer-date {
+  color: rgb(56, 56, 56);
+  font-size: 65px;
+  margin-bottom: -60px;
+  margin-left: 3px;
+  font-family: "Oswald", sans-serif;
+}
+
+.executive {
+  width: 1030px;
+  justify-content: center;
+}
+
+.non-executive {
+  width: 1030px;
+  justify-content: center;
+}
+
+.officer-info {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+}
+
+.join-nav {
+  height: 500px;
+  background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
+    url("../joinbg.jpeg") no-repeat top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 2000;
+}
+
+.join-fence-text {
+  color: rgb(56, 56, 56);
+}
+
+.join-header {
+  width: 1030px;
 }

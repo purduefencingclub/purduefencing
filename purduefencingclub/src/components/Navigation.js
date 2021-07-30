@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Container, Col, Row, Form } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
-import Logo from "../nasa.png";
+import Logo from "../purduelogo2.svg";
 
 import "../styles/index.css";
 
@@ -13,7 +13,7 @@ const Navigation = () => (
           <LinkContainer to="/">
             <Navbar.Brand>
               <div className="outer">
-                <img src={Logo} height="85" width="100px" />
+                <img src={Logo} width="100px" />
                 <div className="overlay"></div>
               </div>
             </Navbar.Brand>
@@ -26,13 +26,13 @@ const Navigation = () => (
               <LinkContainer to="/">
                 <Nav.Link className="navlink">HOME</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/about">
+              <LinkContainer to="/officers">
                 <Nav.Link className="navlink">OFFICERS</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/about">
                 <Nav.Link className="navlink">ABOUT</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/about">
+              <LinkContainer to="/join">
                 <Nav.Link className="navlink">JOIN US</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/about">
