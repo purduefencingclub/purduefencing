@@ -8,6 +8,13 @@
   font-family: "Oswald", sans-serif;
 }
 
+.resources-link {
+  color: black !important;
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Oswald", sans-serif;
+}
 .navlink:hover {
   color: white !important;
 }
@@ -19,7 +26,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
-  padding-left: 2000;
 }
 
 .heading-purdue {
@@ -38,8 +44,8 @@
 }
 
 .nav-primary {
-  margin-left: 200px;
-  margin-right: 200px;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .header-text {
@@ -192,4 +198,105 @@
 
 .join-header {
   width: 1030px;
+}
+
+#dropdown-basic-button {
+  color: rgba(48, 47, 47, 0.911) !important;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Oswald", sans-serif;
+}
+
+.dropdown-item {
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+.navdrop .active {
+  background-color: #1a1a1a !important;
+}
+
+.droplink:active {
+  background-color: #505050 !important;
+}
+
+.navlink-news {
+  margin-right: 20px;
+}
+
+.join-intro {
+  font-family: "Oswald", sans-serif;
+}
+
+.join-content-container {
+  width: 70%;
+}
+
+.contact-nav {
+  height: 500px;
+  background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
+    url("../contactbg.jpeg") no-repeat top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 2000;
+}
+
+.news-nav {
+  height: 500px;
+  background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
+    url("../newsbg.jpeg") no-repeat top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 2000;
+}
+
+.beginner-nav {
+  height: 500px;
+  background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
+    url("../beginnerbg2.jpeg") no-repeat top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 2000;
+}
+
+.beginner-sub {
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  padding-left: 80px;
+  color: rgba(48, 47, 47, 0.911);
+}
+
+.beginner-text {
+  padding-top: 60px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.fencing-body {
+  width: 70%;
+}
+
+.fencing-header {
+  font-size: 40px;
+  font-family: "Oswald", sans-serif;
+}
+
+.stickybox {
+  background-color: rgba(245, 245, 245, 0.911);
+  border: 1px solid black;
+  box-shadow: 3px 3px #888888;
+  font-family: "Oswald", sans-serif;
+}
+
+.sidebarlink {
+  color: black !important;
+}
+
+.sidebarlink:hover {
+  color: #292929 !important;
+}
+
+.beginner-content {
+  width: 70%;
+  margin: 0 auto;
 }

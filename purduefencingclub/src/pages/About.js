@@ -75,7 +75,7 @@ const About = () => (
         <br />
         <br />
         <br />
-        <img src={divider} height="80px" width="1000px" />
+        <hr></hr>
         <br />
         <br />
         <div className="work-improvement">

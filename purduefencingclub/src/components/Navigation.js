@@ -1,13 +1,23 @@
 import React from "react";
-import { Navbar, Nav, Container, Col, Row, Form } from "react-bootstrap";
+import {
+  Navbar,
+  Nav,
+  Container,
+  Col,
+  Row,
+  Form,
+  NavDropdown,
+  Dropdown,
+  DropdownButton,
+} from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
-import Logo from "../purduelogo2.svg";
+import Logo from "../logo.svg";
 
 import "../styles/index.css";
 
 const Navigation = () => (
   <div>
-    <Navbar className="nav-primary">
+    <Navbar className="nav-primary" expand="lg">
       <Container>
         <Row>
           <LinkContainer to="/">
@@ -22,7 +32,7 @@ const Navigation = () => (
         <Row>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav>
+            <Nav className="me-auto">
               <LinkContainer to="/">
                 <Nav.Link className="navlink">HOME</Nav.Link>
               </LinkContainer>
@@ -35,12 +45,27 @@ const Navigation = () => (
               <LinkContainer to="/join">
                 <Nav.Link className="navlink">JOIN US</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/about">
+              <LinkContainer to="/contact">
                 <Nav.Link className="navlink">CONTACT</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/about">
-                <Nav.Link className="navlink">RESOURCES</Nav.Link>
+              <LinkContainer to="/news">
+                <Nav.Link className="navlink navlink-news">NEWS</Nav.Link>
               </LinkContainer>
+              <NavDropdown
+                id="dropdown-basic-button"
+                title="RESOURCES"
+                menuVariant="dark"
+                className="navdrop"
+              >
+                <LinkContainer to="/beginner">
+                  <NavDropdown.Item className="droplink">
+                    Beginner's Page
+                  </NavDropdown.Item>
+                </LinkContainer>
+                <LinkContainer to="/FAQ">
+                  <NavDropdown.Item className="droplink">FAQ</NavDropdown.Item>
+                </LinkContainer>
+              </NavDropdown>
             </Nav>
           </Navbar.Collapse>
         </Row>

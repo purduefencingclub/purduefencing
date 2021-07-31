@@ -8,7 +8,7 @@ import divider from "../divider1.png";
 import Navigation from "../components/Navigation";
 import "../styles/index.css";
 
-const About = () => (
+const Officers = () => (
   <>
     <script
       src="https://kit.fontawesome.com/a17da011a4.js"
@@ -438,4 +438,4 @@ const About = () => (
   </>
 );
 
-export default About;
+export default Officers;

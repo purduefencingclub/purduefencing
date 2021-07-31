@@ -44,7 +44,7 @@ const Index = () => (
         <br />
         <br />
         <br />
-        <img src={divider} height="80px" width="1000px" />
+        <hr></hr>
         <br />
         <br />
         <br />
@@ -72,8 +72,7 @@ const Index = () => (
         <br />
         <br />
         <br />
-        <img src={divider} height="80px" width="1000px" />
-        <br />
+        <hr></hr>
         <br />
         <br />
         <br />
@@ -122,7 +121,7 @@ const Index = () => (
         <br />
         <br />
         <br />
-        <img src={divider} height="80px" width="1000px" />
+        <hr></hr>
         <br />
         <Container>
           <Fade>
