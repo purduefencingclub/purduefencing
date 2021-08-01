@@ -10,6 +10,9 @@ import "../styles/index.css";
 
 const Officers = () => (
   <>
+    {/* General notes about this page: I like how the cards look. The page has some CSS styling issues that need
+    to be addressed, specifically with the grid. Their padding is being adjusted but it's getting messed up on
+    mobile. As for the layout of the page, I think it's okay, but I can't tell if it's missing something. */}
     <script
       src="https://kit.fontawesome.com/a17da011a4.js"
       crossorigin="anonymous"
@@ -34,6 +37,11 @@ const Officers = () => (
           </Row>
           <br />
           <Row xs={1} md={3}>
+            {/* xs and md refer to the column number for extra small/medium devices (1 on mobile, 3 on laptop)
+          (phones/laptops) which helps spacing on different device widths. 
+          Need to add these to other pages */}
+            {/* Another idea is to create a card component with props for name, major, weapon, 
+          and pic and pass them in here. WOuld probably look wayyyyy cleaner */}
             <Col>
               <Card style={{ width: "18rem" }} className="text-center">
                 <Card.Img variant="top" src={image1} />

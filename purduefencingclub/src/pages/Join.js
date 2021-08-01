@@ -18,6 +18,12 @@ import "../styles/index.css";
 
 const Join = () => (
   <>
+    {/* General notes about this page: Not really sure about the design, I kinda just put stuff on the page.
+    It's okay but it also feels like something is missing. I can't tell if it's a content issue or a space
+    issue. I like the cards here, though, as it stylistically matches the officers page and provides
+    an easy way to update the site in the future.
+    Additionally, it would be really cool to have these pull info from an event database, which would also 
+    signicantly reduce the amount of work in updating the page. */}
     <script
       src="https://kit.fontawesome.com/a17da011a4.js"
       crossorigin="anonymous"

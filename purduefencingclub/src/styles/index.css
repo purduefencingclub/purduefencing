@@ -1,7 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Homemade+Apple&family=Noto+Serif&family=Oswald:wght@500&display=swap");
 
+/* General stuff */
+/* The biggest issues with the CSS rn is that I've adjusted the spacing with padding/margins.
+I did this just to get the spacing down quickly. The best way to deal with this is to rely
+more heavily on the bootstrap layout system. Done correctly, it should auto adjust on different
+device sizes. */
+
+/* Navigation component */
+
+.nav-primary {
+  width: 70%; /* 70% is the margin for the entire site */
+  margin: 0 auto;
+}
+
 .navlink {
-  color: rgba(48, 47, 47, 0.911) !important;
+  color: rgba(
+    48,
+    47,
+    47,
+    0.911
+  ) !important; /* !important is used to override bootstrap css, not sure if there is a better way */
   margin-left: 30px;
   font-weight: bold;
   font-size: 15px;
@@ -15,9 +33,39 @@
   font-size: 15px;
   font-family: "Oswald", sans-serif;
 }
+
 .navlink:hover {
   color: white !important;
 }
+
+/* This is the resources drop down on the far right of the navbar. */
+#dropdown-basic-button {
+  color: rgba(48, 47, 47, 0.911) !important;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Oswald", sans-serif;
+}
+
+.dropdown-item {
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+.navdrop .active {
+  background-color: #1a1a1a !important;
+}
+
+.droplink:active {
+  /* This refers to the background of the thing that drops down, as opposed to the links themselves */
+  background-color: #505050 !important;
+}
+
+.navlink-news {
+  margin-right: 20px;
+}
+
+/* End Navigation */
+/* Header for the home page specifically */
 .navWrapper {
   height: 640px;
   background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
@@ -25,7 +73,12 @@
       no-repeat top center;
   background-repeat: no-repeat;
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 70%,
+    0 100%
+  ); /* clip-path is the css property which slashes the picture. */
 }
 
 .heading-purdue {
@@ -41,11 +94,6 @@
   font-size: 140px;
   font-weight: bold;
   font-family: "Oswald", sans-serif;
-}
-
-.nav-primary {
-  width: 70%;
-  margin: 0 auto;
 }
 
 .header-text {
@@ -67,10 +115,23 @@
   margin-top: -30px;
 }
 
-.join-button {
-  /* background-color: rgba(48, 47, 47, 0.911) !important; */
+/* End Header */
+/* Home page */
+
+/* For the list of universities in the home page */
+.university-header {
+  text-align: center;
 }
 
+.universities {
+  width: 1030px;
+}
+
+.uni-logo {
+  height: 150px;
+}
+
+/* About page */
 .secondary-nav {
   height: 500px;
   background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
@@ -98,31 +159,6 @@
   font-family: "Oswald", sans-serif, bold;
 }
 
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(20vh);
-  visibility: hidden;
-  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
-  will-change: opacity, visibility;
-}
-.fade-in-section.is-visible {
-  opacity: 1;
-  transform: none;
-  visibility: visible;
-}
-
-.university-header {
-  text-align: center;
-}
-
-.universities {
-  width: 1030px;
-}
-
-.uni-logo {
-  height: 150px;
-}
-
 .about-header {
   font-size: 50px;
 }
@@ -131,11 +167,7 @@
   width: 1030px;
   font-family: "Oswald", sans-serif;
 }
-
-.image-row-3 {
-  padding: 0;
-}
-
+/* These text-aligns can probably be done with bootstrap classes */
 .image-center {
   padding-right: 53px;
   padding-left: 53px;
@@ -151,6 +183,8 @@
   text-align: center;
 }
 
+/* End About */
+/* Officer page */
 .officer-nav {
   height: 500px;
   background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
@@ -183,6 +217,8 @@
   font-size: 18px;
 }
 
+/* End Officer */
+/* Join page */
 .join-nav {
   height: 500px;
   background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
@@ -200,30 +236,6 @@
   width: 1030px;
 }
 
-#dropdown-basic-button {
-  color: rgba(48, 47, 47, 0.911) !important;
-  font-weight: bold;
-  font-size: 15px;
-  font-family: "Oswald", sans-serif;
-}
-
-.dropdown-item {
-  color: white;
-  font-family: "Oswald", sans-serif;
-}
-
-.navdrop .active {
-  background-color: #1a1a1a !important;
-}
-
-.droplink:active {
-  background-color: #505050 !important;
-}
-
-.navlink-news {
-  margin-right: 20px;
-}
-
 .join-intro {
   font-family: "Oswald", sans-serif;
 }
@@ -232,6 +244,8 @@
   width: 70%;
 }
 
+/* End Join */
+/* Contact page */
 .contact-nav {
   height: 500px;
   background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
@@ -241,6 +255,8 @@
   padding-left: 2000;
 }
 
+/* End Contact */
+/* News page */
 .news-nav {
   height: 500px;
   background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
@@ -250,6 +266,8 @@
   padding-left: 2000;
 }
 
+/* End News */
+/* Beginner page */
 .beginner-nav {
   height: 500px;
   background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
@@ -262,8 +280,8 @@
 .beginner-sub {
   font-family: "Oswald", sans-serif;
   font-size: 40px;
-  padding-left: 80px;
   color: rgba(48, 47, 47, 0.911);
+  padding-left: 20px;
 }
 
 .beginner-text {
@@ -272,16 +290,8 @@
   margin: 0 auto;
 }
 
-.fencing-body {
-  width: 70%;
-}
-
-.fencing-header {
-  font-size: 40px;
-  font-family: "Oswald", sans-serif;
-}
-
 .stickybox {
+  /* CSS for the sticky box on the left-hand side of the page to try to make it stand out more */
   background-color: rgba(245, 245, 245, 0.911);
   border: 1px solid black;
   box-shadow: 3px 3px #888888;
@@ -299,4 +309,16 @@
 .beginner-content {
   width: 70%;
   margin: 0 auto;
+}
+
+/* General styles */
+/* I think we should add some basic custom styles with general names so future fencing people can apply them
+when editing the site. Sort of like our own mini CSS framework */
+.fencing-body {
+  width: 70%;
+}
+
+.fencing-header {
+  font-size: 40px;
+  font-family: "Oswald", sans-serif;
 }

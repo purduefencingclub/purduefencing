@@ -12,6 +12,12 @@ import "../styles/index.css";
 
 const Beginner = () => (
   <>
+    {/* General notes about this page: My idea for the layout was to to be a watered-down wiki, hence the sticky box.
+    Sort of like how you can jump to different parts of a normal wikipedia using the sidebar (though on Wikipedia it
+    it is not sticky). I was thinking that the page could be a general knowledge base if you are completely new to 
+    fencing. You would probably want some general information, then info about the three weapons, what kinds of equipment
+    you need, etc. And each of those could be a header which can be jumped to from the sidebar. As for the layout of 
+    each section I have no idea. */}
     <script
       src="https://kit.fontawesome.com/a17da011a4.js"
       crossorigin="anonymous"

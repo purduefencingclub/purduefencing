@@ -17,10 +17,19 @@ import wayne from "../wayne.png";
 
 const Index = () => (
   <>
+    {/* General notes about this page: Nothing too special going on with this page. I originally just wanted a longer 
+    page split up by sections with a header, picture, and a paragraph or so. I figured this page should have club-specific
+    information rather than fencing specific, hence the universities we've competed, where members are from, etc. 
+    I also think that we should somehow emphasize the fact that we are open to complete beginners and encourage
+    beginners to join. I think it's worth stating somewhere that a lot of our own competitive fencers started 
+    in college. */}
     <Header></Header>
     <br />
     <div>
       <Container className="home-intro">
+        {/* Each body section is wrapped in a Fade element from 'react-reveal' so they
+        fade onto the page, but larger or smaller elements can be faded if that
+        seems better */}
         <Fade>
           <Row>
             <Col>
@@ -41,6 +50,7 @@ const Index = () => (
             </Col>
           </Row>
         </Fade>
+        {/* Quick note, I'm using breaks for quick spacing so I don't have to add more CSS, but this will get changed */}
         <br />
         <br />
         <br />
@@ -129,6 +139,7 @@ const Index = () => (
               <h2>Members From All Over the Country</h2>
             </div>
           </Fade>
+          {/* Not really sure what to add here, maybe a map? */}
         </Container>
       </Container>
     </div>

@@ -10,6 +10,9 @@ import "../styles/index.css";
 
 const About = () => (
   <>
+    {/* General notes about this page: I don't really like the layout of the first section. It could
+    definitely be improved. The second section with the "beliefs" I think makes a lot of sense to add.
+    I got those words from the consitution of the club. I like the icons too.  */}
     <script
       src="https://kit.fontawesome.com/a17da011a4.js"
       crossorigin="anonymous"
@@ -26,6 +29,9 @@ const About = () => (
     </div>
     <br />
     <div className="d-flex justify-content-center">
+      {/* After a little research I think adding these classnames aren't a good way to style the page.
+    I originally wanted the last columns in the grid to be center aligned, but I think that
+    A) looks worse and B) is unneccesary, so perhaps not doing this is better */}
       <Container className="about-intro">
         <Fade>
           <Row>

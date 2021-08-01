@@ -17,6 +17,12 @@ import "../styles/index.css";
 
 const Navigation = () => (
   <div>
+    {/* General notes about this component: As Eric pointed out, the font could probably be bigger. What 
+    I've gone back and forth with is the color of the links. Currently they are black, pretty much the
+    only other option is white. The problem with white is that it tends to blend into the background
+    of certain pictures. I don't want to change the color overlay for consistency sake. We could change
+    the pictures though. When they don't blend in, I do think white looks better.
+    Also, the resources dropdown might be better as a hover rather than a click, but I can't get it working. */}
     <Navbar className="nav-primary" expand="lg">
       <Container>
         <Row>
