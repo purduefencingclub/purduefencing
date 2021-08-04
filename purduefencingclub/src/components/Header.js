@@ -1,15 +1,6 @@
 import React from "react";
-import {
-  Navbar,
-  Nav,
-  Container,
-  Col,
-  Row,
-  Form,
-  Button,
-} from "react-bootstrap";
+import { Container, Row, Button, Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
-import Logo from "../nasa.png";
 import Navigation from "./Navigation";
 import "../styles/index.css";
 

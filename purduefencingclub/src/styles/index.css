@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Homemade+Apple&family=Noto+Serif&family=Oswald:wght@500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* General stuff */
 /* The biggest issues with the CSS rn is that I've adjusted the spacing with padding/margins.
 I did this just to get the spacing down quickly. The best way to deal with this is to rely
@@ -20,8 +20,8 @@ device sizes. */
     47,
     0.911
   ) !important; /* !important is used to override bootstrap css, not sure if there is a better way */
-  margin-left: 30px;
   font-weight: bold;
+  margin-right: 30px;
   font-size: 15px;
   font-family: "Oswald", sans-serif;
 }
@@ -38,6 +38,23 @@ device sizes. */
   color: white !important;
 }
 
+.nav-links {
+  float: right;
+}
+
+.fencing-nav {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* This is a weird hack to get the navbar to collapse properly on mobile. idk. */
+@media (max-width: 1024px) {
+  .nav-links {
+    float: right;
+    width: 500%;
+    background-color: rgba(255, 255, 255, 0.281);
+  }
+}
 /* This is the resources drop down on the far right of the navbar. */
 #dropdown-basic-button {
   color: rgba(48, 47, 47, 0.911) !important;
@@ -65,6 +82,45 @@ device sizes. */
 }
 
 /* End Navigation */
+/* Footer component */
+.footerWrapper {
+  height: 4em;
+  width: 100%;
+  background-color: black;
+}
+
+.footerText {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding-top: 24px;
+}
+
+.footerSecret {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  padding-top: 24px;
+}
+
+.footerContainer {
+  width: 72%;
+}
+.footerRow {
+  height: 4em;
+}
+
+.footer-col-2 {
+  text-align: right;
+}
+
+.footer-icon {
+  padding-left: 20px;
+  padding-top: 18px;
+  color: white;
+}
+
+.footer-icons {
+  margin-bottom: 10px;
+}
 /* Header for the home page specifically */
 .navWrapper {
   height: 640px;
@@ -97,8 +153,8 @@ device sizes. */
 }
 
 .header-text {
-  margin-left: 200px;
-  margin-top: 70px;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .join-text {
@@ -150,7 +206,7 @@ device sizes. */
 }
 
 .home-intro {
-  width: 1030px;
+  width: 70%;
   font-family: "Oswald", sans-serif;
 }
 
@@ -191,30 +247,31 @@ device sizes. */
     url("../officer-bg.jpeg") no-repeat top center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-left: 2000;
 }
 
 .officer-date {
   color: rgb(56, 56, 56);
   font-size: 65px;
-  margin-bottom: -60px;
-  margin-left: 3px;
   font-family: "Oswald", sans-serif;
 }
 
 .executive {
-  width: 1030px;
+  width: 70%;
   justify-content: center;
 }
 
 .non-executive {
-  width: 1030px;
+  width: 70%;
   justify-content: center;
 }
 
 .officer-info {
   font-family: "Oswald", sans-serif;
   font-size: 18px;
+}
+
+.officer-card {
+  margin-bottom: 20px;
 }
 
 /* End Officer */
@@ -311,6 +368,28 @@ device sizes. */
   margin: 0 auto;
 }
 
+/* End Beginner */
+/* FAQ Page */
+.faq-nav {
+  height: 500px;
+  background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
+    url("../faqbg.jpeg") no-repeat top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 2000;
+}
+.faq-row-wrapper .faq-title {
+  font-family: "Oswald", sans-serif;
+}
+
+.faq-row-wrapper .faq-body {
+  font-family: "Oswald", sans-serif;
+}
+
+.faq-row-wrapper .faq-body .faq-row .row-content .row-content-text {
+  font-family: "Roboto", sans-serif;
+}
+
 /* General styles */
 /* I think we should add some basic custom styles with general names so future fencing people can apply them
 when editing the site. Sort of like our own mini CSS framework */
@@ -321,4 +400,18 @@ when editing the site. Sort of like our own mini CSS framework */
 .fencing-header {
   font-size: 40px;
   font-family: "Oswald", sans-serif;
+}
+
+.fencing-subtitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+}
+
+.fencing-subheader {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+}
+
+.fencing-text {
+  font-family: "Roboto", sans-serif;
 }

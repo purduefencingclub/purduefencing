@@ -1,10 +1,10 @@
 import React from "react";
-import { Nav, Container, Button, Row, Col, Image } from "react-bootstrap";
-import { LinkContainer } from "react-router-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Fade from "react-reveal";
 import image1 from "../image1.jpeg";
 import divider from "../divider1.png";
 
+import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import "../styles/index.css";
 
@@ -32,6 +32,7 @@ const SignUp = () => (
         </Fade>
       </Container>
     </div>
+    <Footer></Footer>
   </>
 );
 

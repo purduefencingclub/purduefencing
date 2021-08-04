@@ -13,6 +13,7 @@ import Fade from "react-reveal";
 import image1 from "../image1.jpeg";
 import divider from "../divider1.png";
 
+import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import "../styles/index.css";
 
@@ -41,6 +42,8 @@ const Join = () => (
         </Container>
       </div>
     </div>
+    <br />
+    <br />
     <br />
     <h1 className="text-center">OPPORTUNITIES FOR BEGINNERS</h1>
     <Container className="join-content-container">
@@ -144,6 +147,7 @@ const Join = () => (
       </Row>
     </Container>
     <br />
+    <Footer></Footer>
   </>
 );
 

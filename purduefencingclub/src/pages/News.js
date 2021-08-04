@@ -5,6 +5,7 @@ import Fade from "react-reveal";
 import image1 from "../image1.jpeg";
 import divider from "../divider1.png";
 
+import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import "../styles/index.css";
 
@@ -32,6 +33,7 @@ const News = () => (
         </Fade>
       </Container>
     </div>
+    <Footer></Footer>
   </>
 );
 

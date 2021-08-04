@@ -1,15 +1,5 @@
 import React from "react";
-import {
-  Navbar,
-  Nav,
-  Container,
-  Col,
-  Row,
-  Form,
-  NavDropdown,
-  Dropdown,
-  DropdownButton,
-} from "react-bootstrap";
+import { Navbar, Nav, Container, Row, NavDropdown } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import Logo from "../logo.svg";
 
@@ -25,20 +15,18 @@ const Navigation = () => (
     Also, the resources dropdown might be better as a hover rather than a click, but I can't get it working. */}
     <Navbar className="nav-primary" expand="lg">
       <Container>
-        <Row>
-          <LinkContainer to="/">
-            <Navbar.Brand>
-              <div className="outer">
-                <img src={Logo} width="100px" />
-                <div className="overlay"></div>
-              </div>
-            </Navbar.Brand>
-          </LinkContainer>
-        </Row>
-        <Row>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <LinkContainer to="/">
+          <Navbar.Brand>
+            <div className="outer">
+              <img src={Logo} width="100px" />
+              <div className="overlay"></div>
+            </div>
+          </Navbar.Brand>
+        </LinkContainer>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <div className="nav-links">
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="">
               <LinkContainer to="/">
                 <Nav.Link className="navlink">HOME</Nav.Link>
               </LinkContainer>
@@ -74,7 +62,7 @@ const Navigation = () => (
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
-        </Row>
+        </div>
       </Container>
     </Navbar>
   </div>

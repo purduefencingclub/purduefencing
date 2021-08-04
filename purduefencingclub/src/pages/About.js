@@ -1,9 +1,8 @@
 import React from "react";
-import { Nav, Container, Button, Row, Col, Image } from "react-bootstrap";
-import { LinkContainer } from "react-router-bootstrap";
+import { Container, Row, Col, Carousel } from "react-bootstrap";
 import Fade from "react-reveal";
 import image1 from "../image1.jpeg";
-import divider from "../divider1.png";
+import Footer from "../components/Footer";
 
 import Navigation from "../components/Navigation";
 import "../styles/index.css";
@@ -64,30 +63,30 @@ const About = () => (
           </Row>
           <br />
           <br />
-          <Container className="image-row-2 d-flex justify-content-center">
-            <Row>
-              <Col className="image-row-3">
-                <Image src={image1} width="300px" />
-              </Col>
-              <Col className="image-row-3 image-center">
-                <img src={image1} width="300px" />
-              </Col>
-              <Col className="image-row-3">
-                <img src={image1} width="300px" />
-              </Col>
-            </Row>
-          </Container>
         </Fade>
-        <br />
-        <br />
         <br />
         <hr></hr>
         <br />
         <br />
+        <Container className="fencing-carousel">
+          <Carousel>
+            <Carousel.Item>
+              <img className="d-block w-100" src={image1} alt="First slide" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img className="d-block w-100" src={image1} alt="Second slide" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img className="d-block w-100" src={image1} alt="Third slide" />
+            </Carousel.Item>
+          </Carousel>
+        </Container>
+        <br />
+        <br />
+        <hr></hr>
         <div className="work-improvement">
           <Fade>
             <h2>OUR BELIEFS</h2>
-            <br />
             <br />
             <br />
             <Row>
@@ -141,6 +140,7 @@ const About = () => (
         </div>
       </Container>
     </div>
+    <Footer></Footer>
   </>
 );
 

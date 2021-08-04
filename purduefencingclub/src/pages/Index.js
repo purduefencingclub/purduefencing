@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import "../styles/index.css";
 import image1 from "../image1.jpeg";
-import divider from "../divider1.png";
 import Fade from "react-reveal";
 
 import chicago from "../chicago.png";
@@ -143,6 +143,7 @@ const Index = () => (
         </Container>
       </Container>
     </div>
+    <Footer></Footer>
   </>
 );
 

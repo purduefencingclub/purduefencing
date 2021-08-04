@@ -7,6 +7,12 @@ import divider from "../divider1.png";
 import olympic from "../olympicfencing.jpeg";
 import StickyBox from "react-sticky-box";
 
+import foil from "../foil.png";
+import saber from "../saber.png";
+import epee from "../epee.png";
+
+import Footer from "../components/Footer";
+
 import Navigation from "../components/Navigation";
 import "../styles/index.css";
 
@@ -40,7 +46,7 @@ const Beginner = () => (
           <Nav defaultActiveKey="/home" className="flex-column">
             <Nav.Link className="sidebarlink">OVERVIEW</Nav.Link>
             <Nav.Link className="sidebarlink">WEAPONS</Nav.Link>
-            <Nav.Link className="sidebarlink">FENCING</Nav.Link>
+            <Nav.Link className="sidebarlink">EQUIPMENT</Nav.Link>
           </Nav>
         </StickyBox>
         <Container className="beginner-content">
@@ -70,6 +76,85 @@ const Beginner = () => (
           <hr></hr>
           <Fade>
             <p className="fencing-header">Weapons</p>
+            <p className="fencing-text">
+              You may be surprised to learn that there are three (3) disciplines
+              in fencing...Do british people actually exist? I mean, they must
+              be a meme, there is a not a single thing about them. And I mean
+              it. Let's go through the evidence: Where are they from? Not a
+              single country in the world is named Britain. Some people say they
+              come from England, and England is inside Britain, but if that was
+              the case they wouldn't be British they would be Englanders. Also,
+              heard some silly theories about them coming from whales. Guys, no,
+              whale people do not exist.
+            </p>
+            <Row xs={1} md={3}>
+              <Col>
+                <Fade>
+                  <img src={foil} width="100%" />
+                  <p className="fencing-subtitle text-center">Foil</p>
+                </Fade>
+              </Col>
+              <Col>
+                <Fade>
+                  <img src={saber} width="100%" />
+                  <p className="fencing-subtitle text-center">Saber</p>
+                </Fade>
+              </Col>
+              <Col>
+                <Fade>
+                  <img src={epee} width="100%" />
+                  <p className="fencing-subtitle text-center">Epee</p>
+                </Fade>
+              </Col>
+            </Row>
+            <p className="fencing-subheader">Foil</p>
+            <img src={image1} width="100%" />
+            <br />
+            <br />
+            <p className="fencing-text">
+              Mixtape man bun shaman, tacos jean shorts waistcoat ramps portland
+              hot chicken. Pickled pitchfork jean shorts selvage beard retro.
+              Gentrify hammock four loko cred meditation prism 90's street art
+              kitsch everyday carry gastropub. Literally jean shorts pop-up
+              hammock tilde, biodiesel fixie kinfolk gentrify slow-carb
+              actually. Try-hard meh mlkshk, pug affogato mustache thundercats
+              pinterest trust fund chicharrones fingerstache. Prism fanny pack
+              four loko art party master cleanse blue bottle DIY.
+            </p>
+            <p className="fencing-subheader">Saber</p>
+            <img src={image1} width="100%" />
+            <br />
+            <br />
+            <p className="fencing-text">
+              this is the best weapon, tacos jean shorts waistcoat ramps
+              portland hot chicken. Pickled pitchfork jean shorts selvage beard
+              retro. Gentrify hammock four loko cred meditation prism 90's
+              street art kitsch everyday carry gastropub. Literally jean shorts
+              pop-up hammock tilde, biodiesel fixie kinfolk gentrify slow-carb
+              actually. Try-hard meh mlkshk, pug affogato mustache thundercats
+              pinterest trust fund chicharrones fingerstache. Prism fanny pack
+              four loko art party master cleanse blue bottle DIY.
+            </p>
+            <p className="fencing-subheader">Epee</p>
+            <img src={image1} width="100%" />
+            <br />
+            <br />
+            <p className="fencing-text">
+              Mixtape man bun shaman, tacos jean shorts waistcoat ramps portland
+              hot chicken. Pickled pitchfork jean shorts selvage beard retro.
+              Gentrify hammock four loko cred meditation prism 90's street art
+              kitsch everyday carry gastropub. Literally jean shorts pop-up
+              hammock tilde, biodiesel fixie kinfolk gentrify slow-carb
+              actually. Try-hard meh mlkshk, pug affogato mustache thundercats
+              pinterest trust fund chicharrones fingerstache. Prism fanny pack
+              four loko art party master cleanse blue bottle DIY.
+            </p>
+          </Fade>
+          <br />
+          <hr></hr>
+          <Fade>
+            <p className="fencing-header">Equipment</p>
+            <p className="fencing-text">...</p>
           </Fade>
         </Container>
       </Container>
@@ -104,6 +189,7 @@ const Beginner = () => (
     <br />
     <br />
     <br />
+    <Footer></Footer>
   </>
 );
 
