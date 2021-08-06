@@ -19,6 +19,11 @@ const drive = google.drive({
     auth: oauth2Client
 })
 
+
+function getFileList() {
+    console.log()
+}
+
 async function generatePublicUrl() {
     try {
       const fileId = 'YOUR FILE ID';
@@ -43,5 +48,3 @@ async function generatePublicUrl() {
       console.log(error.message);
     }
   }
-
-generatePublicUrl();
