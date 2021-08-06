@@ -19,23 +19,29 @@ const drive = google.drive({
     auth: oauth2Client
 })
 
-async function generatePublicUrl(
+async function generatePublicUrl() {
     try {
-        const fileId = '';
-        await drive.permissions.create({
-            fileId: fileId,
-            requestBody: {
-                role: 'reader',
-                type: 'anyone'
-            }
-        })
-        
-        const result = await drive.files.get({
-            fileId: fileId,
-            fields: 'webVieLink, webContentLink'
-        })
-        console.log(result.data)
+      const fileId = 'YOUR FILE ID';
+      await drive.permissions.create({
+        fileId: fileId,
+        requestBody: {
+          role: 'reader',
+          type: 'anyone',
+        },
+      });
+  
+      /* 
+      webViewLink: View the file in browser
+      webContentLink: Direct download link 
+      */
+      const result = await drive.files.get({
+        fileId: fileId,
+        fields: 'webViewLink, webContentLink',
+      });
+      console.log(result.data);
     } catch (error) {
-        console.log(error.message);
+      console.log(error.message);
     }
-)
+  }
+
+generatePublicUrl();

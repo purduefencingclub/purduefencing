@@ -10,8 +10,6 @@ const imageId = [
 
 const PATH = "https://drive.google.com/uc?export=view&id=";
 
-var list = https://www.googleapis.com/drive/v3/files?q='1qnkCF4acLrMJNO504crKJOAIOQIIZke7'+in+parents&key={API_KEY}
-
 export default function CarouselComponent() {
     return (
         <div className="carousel-wrapper">
