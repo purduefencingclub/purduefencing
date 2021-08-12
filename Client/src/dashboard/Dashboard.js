@@ -26,7 +26,7 @@ const Dashboard = (props) => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await axios.get("/api/blogs/display");
+      const res = await axios.get("http://157.230.80.32:2718/api/blogs/display");
       setPosts(res.data);
       console.log(res.data);
     };
@@ -65,7 +65,7 @@ const Dashboard = (props) => {
 
     e.preventDefault();
     axios
-      .post("/api/posts/create", formData, {
+      .post("http://157.230.80.32:2718/api/posts/create", formData, {
         headers: {
           "x-auth-token": `${token}`,
         },

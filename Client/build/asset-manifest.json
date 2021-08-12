@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f07850d8.chunk.css",
+    "main.js": "/static/js/main.2e3ab477.chunk.js",
+    "main.js.map": "/static/js/main.2e3ab477.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.90f1919f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.90f1919f.js.map",
+    "static/css/2.4be38407.chunk.css": "/static/css/2.4be38407.chunk.css",
+    "static/js/2.9554904d.chunk.js": "/static/js/2.9554904d.chunk.js",
+    "static/js/2.9554904d.chunk.js.map": "/static/js/2.9554904d.chunk.js.map",
+    "static/js/3.58e6e566.chunk.js": "/static/js/3.58e6e566.chunk.js",
+    "static/js/3.58e6e566.chunk.js.map": "/static/js/3.58e6e566.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.4be38407.chunk.css.map": "/static/css/2.4be38407.chunk.css.map",
+    "static/css/main.f07850d8.chunk.css.map": "/static/css/main.f07850d8.chunk.css.map",
+    "static/js/2.9554904d.chunk.js.LICENSE.txt": "/static/js/2.9554904d.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/signupbg.6ab75bcc.jpeg",
+    "static/media/chicago.157a475f.png": "/static/media/chicago.157a475f.png",
+    "static/media/cleveland.9533f152.png": "/static/media/cleveland.9533f152.png",
+    "static/media/divider1.275f0398.png": "/static/media/divider1.275f0398.png",
+    "static/media/epee.cd7f1217.png": "/static/media/epee.cd7f1217.png",
+    "static/media/foil.6b1526ba.png": "/static/media/foil.6b1526ba.png",
+    "static/media/image1.c4368d92.jpeg": "/static/media/image1.c4368d92.jpeg",
+    "static/media/logo.590af9dc.svg": "/static/media/logo.590af9dc.svg",
+    "static/media/minnesota.f7549b19.png": "/static/media/minnesota.f7549b19.png",
+    "static/media/northwestern.f53d8ce6.png": "/static/media/northwestern.f53d8ce6.png",
+    "static/media/notredame.eac1d88a.png": "/static/media/notredame.eac1d88a.png",
+    "static/media/ohio.a715d28c.png": "/static/media/ohio.a715d28c.png",
+    "static/media/olympicfencing.0c173701.jpeg": "/static/media/olympicfencing.0c173701.jpeg",
+    "static/media/saber.efb05de7.png": "/static/media/saber.efb05de7.png",
+    "static/media/wayne.ce8602da.png": "/static/media/wayne.ce8602da.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.90f1919f.js",
+    "static/css/2.4be38407.chunk.css",
+    "static/js/2.9554904d.chunk.js",
+    "static/css/main.f07850d8.chunk.css",
+    "static/js/main.2e3ab477.chunk.js"
+  ]
+}

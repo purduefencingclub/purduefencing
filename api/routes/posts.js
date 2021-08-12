@@ -13,7 +13,7 @@ const Post = require("../models/Post");
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, path.join(__dirname, "../images"));
+    cb(null, path.join(__dirname, "../../api/images"));
   },
   filename: function (req, file, cb) {
     cb(null, file.originalname);
@@ -36,7 +36,7 @@ router.post("/create", upload.single("image"), async (req, res) => {
     const newPost = new Post({
       title: req.body.title,
       body: req.body.body,
-      image: "../images/" + req.file.filename,
+      image: "../../api/images/" + req.file.filename,
     });
     const post = await newPost.save();
     res.status(200).json(post);
@@ -53,7 +53,7 @@ router.put("/:id", upload.single("image"), async (req, res) => {
       {
         title: req.body.title,
         body: req.body.body,
-        image: "../images/" + req.file.filename,
+        image: "../../images/" + req.file.filename,
       },
       { new: true }
     );

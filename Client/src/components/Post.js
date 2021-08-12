@@ -17,14 +17,14 @@ export default function Post({ post }) {
   const path = "/post/" + post._id;
 
   const maxCharacterLength = 60;
-  var trimmedBody = post.body.substr(0, maxCharacterLength);
+  //var trimmedBody = post.body.substr(0, maxCharacterLength);
 
-  trimmedBody = trimmedBody.substr(
-    0,
-    Math.min(trimmedBody.length, trimmedBody.lastIndexOf(" "))
-  );
-  trimmedBody += "...";
-
+  //trimmedBody = trimmedBody.substr(
+  //  0,
+  //  Math.min(trimmedBody.length, trimmedBody.lastIndexOf(" "))
+  //);
+  //trimmedBody += "...";
+	const imagePath = "../../api/ + post.image;	
   return (
     <>
       <div>
@@ -35,7 +35,7 @@ export default function Post({ post }) {
           <Card.Body>
             <Card.Title>{post.title}</Card.Title>
             <Card.Text>
-              {trimmedBody}
+              {post.body}
               <br />
               <br />
               <br />

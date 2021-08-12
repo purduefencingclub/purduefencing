@@ -16,7 +16,7 @@ const News = (props) => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await axios.get("/api/blogs/display");
+      const res = await axios.get("http://157.230.80.32:2718/api/blogs/display");
       setPosts(res.data);
       console.log(res.data);
     };
