@@ -19,7 +19,7 @@ import { GET_ERRORS, SET_CURRENT_USER, USER_LOADING } from "./types";
 
 export const loginUser = (userData) => (dispatch) => {
   axios
-    .post("http://157.230.80.32:2718/api/users/login", userData)
+    .post("https://purduefencing.com/v1/api/users/login", userData)
     .then((res) => {
       // Save to localStorage
       // Set token to localStorage

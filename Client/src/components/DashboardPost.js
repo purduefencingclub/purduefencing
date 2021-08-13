@@ -41,7 +41,7 @@ const DashboardPost = ({ post }) => {
     console.log(token);
     e.preventDefault();
     axios
-      .delete(`http://localhost:2718/api/posts/${post._id}`, {
+      .delete(`https://purduefencing.com/v1/api/posts/${post._id}`, {
         headers: {
           "x-auth-token": `${token}`,
         },
@@ -61,7 +61,7 @@ const DashboardPost = ({ post }) => {
     console.log(formDataEdit.title);
     e.preventDefault();
     axios
-      .put(`http://localhost:2718/api/posts/${post._id}`, formDataEdit, {
+      .put(`https://purduefencing.com/v1/api/posts/${post._id}`, formDataEdit, {
         headers: {
           "x-auth-token": `${token}`,
         },

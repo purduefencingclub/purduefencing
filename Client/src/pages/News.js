@@ -16,7 +16,7 @@ const News = (props) => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await axios.get("http://localhost:2718/api/blogs/display");
+      const res = await axios.get("https://purduefencing.com/v1/api/blogs/display");
       setPosts(res.data);
       console.log(res.data);
     };

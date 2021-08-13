@@ -1,7 +1,9 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const multer = require("multer");
+const fs = require('fs');
 require("dotenv").config();
+const https = require("https");
 const app = express();
 const cors = require("cors");
 const auth = require("./middlewares/auth");
@@ -28,16 +30,21 @@ mongoose.connect(
   }
 );
 
+
+
+
+
 // Passport middleware
 app.use(passport.initialize());
 // Passport config
 require("./config/passport")(passport);
 
 // Routes
-app.use("/api/users", users);
-app.use("/api/posts", auth, posts);
-app.use("/api/blogs", blogs);
+app.use("/v1/api/users", users);
+app.use("/v1/api/posts", auth, posts);
+app.use("/v1/api/blogs", blogs);
 
 const PORT = process.env.PORT || 2718;
 
-app.listen(PORT, () => console.log(`The server has started on port: ${PORT}`));
+app.listen(PORT, "157.230.80.32", () => console.log(`The server has started on port: ${PORT}`));
+//https.createServer(options, app).listen(443);
