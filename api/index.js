@@ -13,8 +13,7 @@ const posts = require("./routes/posts");
 const blogs = require("./routes/blogs");
 console.log("change");
 app.use(cors());
-app.use(express.static(__dirname + "/api/images"));
-app.use(express.static(path.join(__dirname, 'client/build')));
+app.use('/images/images', express.static(path.join(__dirname, '/images/images/')));
 
 mongoose.connect(
   process.env.MONGO_URL2,
@@ -41,4 +40,4 @@ app.use("/api/blogs", blogs);
 
 const PORT = process.env.PORT || 2718;
 
-app.listen(PORT, "157.230.80.32", () => console.log(`The server has started on port: ${PORT}`));
+app.listen(PORT, () => console.log(`The server has started on port: ${PORT}`));

@@ -41,7 +41,7 @@ const DashboardPost = ({ post }) => {
     console.log(token);
     e.preventDefault();
     axios
-      .delete(`http://157.230.80.32:2718/api/posts/${post._id}`, {
+      .delete(`http://localhost:2718/api/posts/${post._id}`, {
         headers: {
           "x-auth-token": `${token}`,
         },
@@ -61,7 +61,7 @@ const DashboardPost = ({ post }) => {
     console.log(formDataEdit.title);
     e.preventDefault();
     axios
-      .put(`http://157.230.80.32:2718/api/posts/${post._id}`, formDataEdit, {
+      .put(`http://localhost:2718/api/posts/${post._id}`, formDataEdit, {
         headers: {
           "x-auth-token": `${token}`,
         },
@@ -70,11 +70,13 @@ const DashboardPost = ({ post }) => {
         console.log(res);
       });
   };
+
+  const path = "/images/" + post.image;
   return (
     <>
       <div>
         <Card>
-          <Card.Img variant="top" src={post.image} />
+          <Card.Img variant="top" src={path} />
           <Card.Body>
             <Card.Title>{post.title}</Card.Title>
             <Card.Text>

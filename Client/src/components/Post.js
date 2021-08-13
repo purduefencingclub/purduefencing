@@ -15,7 +15,7 @@ import "../styles/index.css";
 
 export default function Post({ post }) {
   const path = "/post/" + post._id;
-
+  
   const maxCharacterLength = 60;
   //var trimmedBody = post.body.substr(0, maxCharacterLength);
 
@@ -24,13 +24,15 @@ export default function Post({ post }) {
   //  Math.min(trimmedBody.length, trimmedBody.lastIndexOf(" "))
   //);
   //trimmedBody += "...";
-	const imagePath = "../../api/ + post.image;	
+	const imagePath = `/images/${post.image}`
+
+
   return (
     <>
       <div>
         <Card>
           <LinkContainer to={path}>
-            <Card.Img variant="top" src={post.image} />
+            <Card.Img variant="top" src={imagePath} />
           </LinkContainer>
           <Card.Body>
             <Card.Title>{post.title}</Card.Title>
