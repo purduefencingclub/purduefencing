@@ -497,3 +497,9 @@ when editing the site. Sort of like our own mini CSS framework */
     font-size: 25px;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .fencing-body {
+    width: 100%;
+  }
+}

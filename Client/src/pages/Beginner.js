@@ -84,7 +84,7 @@ const Beginner = () => {
               </Nav>
             </StickyBox>
           </Hidden>
-          <Container className="beginner-content">
+          <Container className="fencing-body">
             <p className="fencing-header" id="overview">
               Overview
             </p>
@@ -223,7 +223,7 @@ const Beginner = () => {
                 bend of the hips to the top of the head. This target area is
                 designed to simulate an opponent on horseback. DIY.
               </p>
-              <Row xs={1} md={3}>
+              <Row xs={3} md={3}>
                 <Col>
                   <img src={sabertarget} width="100%" />
                   <p className="fencing-subtitle text-center">Target Area</p>
@@ -258,7 +258,7 @@ const Beginner = () => {
                 blade. However, the entire body is valid target in épée,
                 imitating an actual duel.
               </p>
-              <Row xs={1} md={3}>
+              <Row xs={3} md={3}>
                 <Col>
                   <img src={epeetarget} width="100%" />
                   <p className="fencing-subtitle text-center">Target Area</p>
