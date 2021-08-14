@@ -368,6 +368,10 @@ device sizes. */
   margin: 0 auto;
 }
 
+.beginner-img {
+  padding-bottom: 20px;
+}
+
 /* End Beginner */
 /* Sign-up Page */
 .sign-up-nav {
@@ -453,4 +457,43 @@ when editing the site. Sort of like our own mini CSS framework */
 
 .fencing-text {
   font-family: "Roboto", sans-serif;
+}
+
+.fencing-jumbotron-header {
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  padding-top: 25px;
+  width: 100%;
+}
+
+.fencing-jumbotron-subheader {
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  color: white;
+  padding-left: 20px;
+}
+
+.fencing-image-center img {
+  margin: auto;
+  display: block;
+}
+
+@media screen and (max-width: 1300px) {
+  .fencing-jumbotron-header {
+    font-size: 80px;
+  }
+  .fencing-jumbotron-subheader {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .fencing-jumbotron-header {
+    font-size: 70px;
+  }
+  .fencing-jumbotron-subheader {
+    font-size: 25px;
+  }
 }

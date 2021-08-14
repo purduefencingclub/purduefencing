@@ -10,6 +10,7 @@ import {
   Form,
 } from "react-bootstrap";
 import image1 from "../image1.jpeg";
+
 import axios from "axios";
 
 import "../styles/index.css";
