@@ -2,10 +2,26 @@ import React from "react";
 import { Nav, Container, Button, Row, Col, Card, Image } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import Fade from "react-reveal";
-import image1 from "../image1.jpeg";
-import divider from "../divider1.png";
+import image1 from "../images/image1.jpeg";
+import divider from "../images/divider1.png";
+import foilicon from "../images/foilicon2.png";
+import sabericon from "../images/sabericon.png";
+import epeeicon from "../images/epeeicon.png";
+import freshman from "../images/freshman.png";
+import sophomore from "../images/sophomore.png";
+import junior from "../images/junior.png";
+import senior from "../images/senior.png";
 
 import Footer from "../components/Footer";
+import rightsaber from "../images/rightsaber1.png";
+import rightfoil from "../images/rightfoil.png";
+
+import miranda from "../images/miranda.png";
+import kayla from "../images/kayla.jpg";
+import lauren from "../images/lauren.png";
+import racheal from "../images/racheal.jpg";
+import ryan from "../images/ryan.png";
+import smeric from "../images/smeric.png";
 
 import Navigation from "../components/Navigation";
 import "../styles/index.css";
@@ -35,7 +51,25 @@ const Officers = () => (
       <Container className="executive">
         <Fade>
           <Row>
-            <h2 className="text-center font-weight-bold">PRIMARY OFFICERS</h2>
+            <Col>
+              <img
+                src={rightfoil}
+                width="100%"
+                className="fencing-divider-img"
+              />
+            </Col>
+            <Col>
+              <h2 className="text-center font-weight-bold fencing-divider-subtitle">
+                PRIMARY OFFICERS
+              </h2>
+            </Col>
+            <Col>
+              <img
+                src={rightsaber}
+                className="divider-rotate-180 fencing-divider-img"
+                width="100%"
+              />
+            </Col>
           </Row>
           <br />
           <Row xs={1} md={3}>
@@ -46,7 +80,7 @@ const Officers = () => (
           and pic and pass them in here. WOuld probably look wayyyyy cleaner */}
             <Col>
               <Card className="text-center officer-card">
-                <Card.Img variant="top" src={image1} />
+                <Card.Img variant="top" src={kayla} />
                 <Card.Body>
                   <Card.Title>Kayla Zemek</Card.Title>
                   <Card.Subtitle className="mb-2 text-muted">
@@ -60,12 +94,12 @@ const Officers = () => (
                         <p className="officer-info">Hospitality</p>
                       </Col>
                       <Col>
-                        <i class="fas fa-khanda fa-2x"></i>
-                        <p className="officer-info">Foil</p>
+                        <img src={epeeicon} width="45%" />
+                        <p className="officer-info">Epee</p>
                       </Col>
                       <Col>
-                        <i class="fas fa-user fa-2x"></i>
-                        <p className="officer-info">Junior</p>
+                        <img src={freshman} width="45%" />
+                        <p className="officer-info">Freshman</p>
                       </Col>
                     </Row>
                   </Card.Text>
@@ -74,7 +108,7 @@ const Officers = () => (
             </Col>
             <Col>
               <Card className="text-center officer-card">
-                <Card.Img variant="top" src={image1} />
+                <Card.Img variant="top" src={miranda} className="officer-img" />
                 <Card.Body>
                   <Card.Title>Miranda Carter</Card.Title>
                   <Card.Subtitle className="mb-2 text-muted">
@@ -88,11 +122,11 @@ const Officers = () => (
                         <p className="officer-info">Microbiology</p>
                       </Col>
                       <Col>
-                        <i class="fas fa-khanda fa-2x"></i>
+                        <img src={foilicon} width="50%" />
                         <p className="officer-info">Foil</p>
                       </Col>
                       <Col>
-                        <i class="fas fa-user fa-2x"></i>
+                        <img src={senior} width="50%" />
                         <p className="officer-info">Senior</p>
                       </Col>
                     </Row>
@@ -102,7 +136,7 @@ const Officers = () => (
             </Col>
             <Col>
               <Card className="text-center officer-card">
-                <Card.Img variant="top" src={image1} />
+                <Card.Img variant="top" src={racheal} />
                 <Card.Body>
                   <Card.Title>Racheal Fisher</Card.Title>
                   <Card.Subtitle className="mb-2 text-muted">
@@ -116,11 +150,11 @@ const Officers = () => (
                         <p className="officer-info">Chemistry</p>
                       </Col>
                       <Col>
-                        <i class="fas fa-khanda fa-2x"></i>
-                        <p className="officer-info">Foil</p>
+                        <img src={sabericon} width="45%" />
+                        <p className="officer-info">Saber</p>
                       </Col>
                       <Col>
-                        <i class="fas fa-user fa-2x"></i>
+                        <img src={junior} width="50%" />
                         <p className="officer-info">Junior</p>
                       </Col>
                     </Row>
@@ -130,7 +164,7 @@ const Officers = () => (
             </Col>
             <Col>
               <Card className="text-center officer-card">
-                <Card.Img variant="top" src={image1} />
+                <Card.Img variant="top" src={lauren} />
                 <Card.Body>
                   <Card.Title>Lauren Feng</Card.Title>
                   <Card.Subtitle className="mb-2 text-muted">
@@ -192,7 +226,21 @@ const Officers = () => (
       </Container>
       <Container className="non-executive">
         <Row>
-          <h2 className="text-center">OTHER OFFICERS</h2>
+          <Col>
+            <img src={rightfoil} width="100%" className="fencing-divider-img" />
+          </Col>
+          <Col>
+            <h2 className="text-center font-weight-bold fencing-divider-subtitle">
+              OTHER OFFICERS
+            </h2>
+          </Col>
+          <Col>
+            <img
+              src={rightsaber}
+              className="divider-rotate-180 fencing-divider-img"
+              width="100%"
+            />
+          </Col>
         </Row>
         <br />
         <Row xs={1} md={3}>
@@ -213,7 +261,7 @@ const Officers = () => (
                     </Col>
                     <Col>
                       <i class="fas fa-khanda fa-2x"></i>
-                      <p className="officer-info">Foil</p>
+                      <p className="officer-info">Epee</p>
                     </Col>
                     <Col>
                       <i class="fas fa-user fa-2x"></i>
@@ -226,7 +274,7 @@ const Officers = () => (
           </Col>
           <Col>
             <Card className="text-center officer-card">
-              <Card.Img variant="top" src={image1} />
+              <Card.Img variant="top" src={ryan} />
               <Card.Body>
                 <Card.Title>Ryan Everhart</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">
@@ -254,7 +302,7 @@ const Officers = () => (
           </Col>
           <Col>
             <Card className="text-center officer-card">
-              <Card.Img variant="top" src={image1} />
+              <Card.Img variant="top" src={smeric} />
               <Card.Body>
                 <Card.Title>Eric Wang</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">

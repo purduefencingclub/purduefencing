@@ -3,8 +3,8 @@ import axios from "axios";
 import { Nav, Container, Button, Row, Col, Image } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import Fade from "react-reveal";
-import image1 from "../image1.jpeg";
-import divider from "../divider1.png";
+import image1 from "../images/image1.jpeg";
+import divider from "../images/divider1.png";
 import Posts from "../components/Posts";
 
 import Footer from "../components/Footer";
@@ -16,7 +16,9 @@ const News = (props) => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await axios.get("https://purduefencing.com/v1/api/blogs/display");
+      const res = await axios.get(
+        "https://purduefencing.com/v1/api/blogs/display"
+      );
       setPosts(res.data);
       console.log(res.data);
     };

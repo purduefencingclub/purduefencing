@@ -3,17 +3,26 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../styles/index.css";
-import image1 from "../image1.jpeg";
+import image1 from "../images/image1.jpeg";
 import Fade from "react-reveal";
+import { Visible, Hidden } from "react-grid-system";
 
-import chicago from "../chicago.png";
-import ohio from "../ohio.png";
-import iu from "../iu.png";
-import notredame from "../notredame.png";
-import cleveland from "../cleveland.png";
-import northwestern from "../northwestern.png";
-import minnesota from "../minnesota.png";
-import wayne from "../wayne.png";
+import fencingpic8 from "../images/fencingpic8.jpg";
+import fencingpic6 from "../images/fencingpic5.jpg";
+
+import uprightfoil from "../images/uprightfoil2.png";
+import foildivider from "../images/foildivider1.png";
+import rightsaber from "../images/rightsaber1.png";
+import rightfoil from "../images/rightfoil.png";
+import chicago from "../images/chicago.png";
+import ohio from "../images/ohio.png";
+import iu from "../images/iu.png";
+import notredame from "../images/notredame.png";
+import cleveland from "../images/cleveland.png";
+import northwestern from "../images/northwestern.png";
+import minnesota from "../images/minnesota.png";
+import wayne from "../images/wayne.png";
+import { right } from "@popperjs/core";
 
 const Index = () => (
   <>
@@ -26,17 +35,42 @@ const Index = () => (
     <Header></Header>
     <br />
     <div>
-      <Container className="home-intro">
+      <Container className="home-intro fencing-body">
         {/* Each body section is wrapped in a Fade element from 'react-reveal' so they
         fade onto the page, but larger or smaller elements can be faded if that
         seems better */}
         <Fade>
           <Row>
+            <Hidden xs sm md>
+              <Col>
+                <img src={rightfoil} width="100%" />
+              </Col>
+            </Hidden>
             <Col>
-              <img src={image1} width="500px" />
+              <h1 className="text-center">Welcome to Purdue Fencing!</h1>
+              <Visible xs sm md>
+                <br />
+                <hr />
+              </Visible>
+            </Col>
+            <Hidden xs sm md>
+              <Col>
+                <img
+                  src={rightsaber}
+                  className="divider-rotate-180"
+                  width="100%"
+                />
+              </Col>
+            </Hidden>
+          </Row>
+          <br />
+          <br />
+          <Row>
+            <Col>
+              <img src={fencingpic6} width="500px" />
             </Col>
             <Col>
-              <h1>The Official Fencing Club of Purdue University</h1>
+              <h2>The Official Fencing Club of Purdue University</h2>
               <p className="home-text">
                 Purdue Fencing Club is a co-ed club sports team. We are proud to
                 represent Purdue at collegiate tournaments with men and women
@@ -51,8 +85,7 @@ const Index = () => (
         <br />
         <br />
         <br />
-        <hr></hr>
-        <br />
+        <hr />
         <br />
         <br />
         <br />
@@ -61,7 +94,6 @@ const Index = () => (
             <Col>
               <h1>Open to all skill levels</h1>
               <h2>Beginners (and fencing masters) welcome!</h2>
-              <br></br>
               <p className="home-text">
                 The Purdue Fencing club welcomes anyone regardless of skill
                 level. If you're new and want to give fencing a try, we hold a
@@ -71,20 +103,46 @@ const Index = () => (
               </p>
             </Col>
             <Col>
-              <img src={image1} width="500px" />
+              <img src={fencingpic8} width="500px" />
             </Col>
           </Row>
         </Fade>
         <br />
         <br />
         <br />
-        <hr></hr>
+        {/* <div className="fencing-image-center divider-rotate-180 divider-flip-vertical">
+          <img src={rightsaber} width="50%" />
+        </div> */}
+        <hr />
         <br />
         <br />
         <br />
         <Fade>
           <div className="university-header">
-            <h2>Universities We've Competed With</h2>
+            <Row>
+              <Hidden xs sm md>
+                <Col>
+                  <img src={rightfoil} width="100%" />
+                </Col>
+              </Hidden>
+              <Col>
+                <h2 className="text-center">
+                  Universities we've competed with
+                </h2>
+                <Visible xs sm md>
+                  <br />
+                </Visible>
+              </Col>
+              <Hidden xs sm md>
+                <Col>
+                  <img
+                    src={rightsaber}
+                    className="divider-rotate-180"
+                    width="100%"
+                  />
+                </Col>
+              </Hidden>
+            </Row>
           </div>
           <br />
           <br />

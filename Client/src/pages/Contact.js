@@ -2,8 +2,8 @@ import React, { useState, setStatus } from "react";
 import { Nav, Container, Button, Row, Col, Form } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import Fade from "react-reveal";
-import image1 from "../image1.jpeg";
-import divider from "../divider1.png";
+import image1 from "../images/image1.jpeg";
+import divider from "../images/divider1.png";
 import Footer from "../components/Footer";
 
 import Navigation from "../components/Navigation";

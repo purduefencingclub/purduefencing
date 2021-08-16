@@ -12,8 +12,8 @@ import {
 import axios from "axios";
 import { LinkContainer } from "react-router-bootstrap";
 import Fade from "react-reveal";
-import image1 from "../image1.jpeg";
-import divider from "../divider1.png";
+import image1 from "../images/image1.jpeg";
+import divider from "../images/divider1.png";
 
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
@@ -26,7 +26,9 @@ const Post = (props) => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await axios.get(`/api/blogs/display/${post.id}`);
+      const res = await axios.get(
+        `https://purduefencing.com/v1/api/blogs/display/${post.id}`
+      );
       setThisPost(res.data);
       console.log(res.data);
     };
@@ -34,6 +36,7 @@ const Post = (props) => {
     fetchPosts();
   });
 
+  const imagePath = `/images/${thisPost.image}`;
   return (
     <>
       <script
@@ -55,7 +58,7 @@ const Post = (props) => {
       <br />
       <Container className="join-content-container">
         <Card>
-          <Card.Img variant="top" src={thisPost.image} />
+          <Card.Img variant="top" src={imagePath} />
           <Card.Body>
             <Card.Title>{thisPost.title}</Card.Title>
             <Card.Text>{thisPost.body}</Card.Text>

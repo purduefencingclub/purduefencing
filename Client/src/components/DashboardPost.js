@@ -9,7 +9,7 @@ import {
   Modal,
   Form,
 } from "react-bootstrap";
-import image1 from "../image1.jpeg";
+import image1 from "../images/image1.jpeg";
 
 import axios from "axios";
 

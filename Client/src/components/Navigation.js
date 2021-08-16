@@ -13,7 +13,7 @@ const Navigation = () => (
     of certain pictures. I don't want to change the color overlay for consistency sake. We could change
     the pictures though. When they don't blend in, I do think white looks better.
     Also, the resources dropdown might be better as a hover rather than a click, but I can't get it working. */}
-    <Navbar className="nav-primary" expand="lg">
+    <Navbar className="nav-primary fencing-nav-1" expand="lg">
       <Container>
         <LinkContainer to="/">
           <Navbar.Brand>

@@ -1,8 +1,22 @@
 import React from "react";
 import { Container, Row, Col, Carousel } from "react-bootstrap";
 import Fade from "react-reveal";
-import image1 from "../image1.jpeg";
+import image1 from "../images/image1.jpeg";
 import Footer from "../components/Footer";
+
+import oldfencing1 from "../images/oldfencing1.jpeg";
+import oldfencing2 from "../images/oldfencing2.jpeg";
+
+import fencingpic1 from "../images/fencingpic3.jpg";
+import fencingpic2 from "../images/fencingpic4.jpg";
+import fencingpic3 from "../images/fencingpic6.jpg";
+import fencingpic4 from "../images/fencingpic9.png";
+
+import leftfoil from "../images/uprightfoil2.png";
+import rightsaber from "../images/rightsaber1.png";
+import downsaber from "../images/downsaber.png";
+import downfoil from "../images/downfoil.png";
+import downepee from "../images/downepee.png";
 
 import Navigation from "../components/Navigation";
 import "../styles/index.css";
@@ -27,15 +41,16 @@ const About = () => (
       </div>
     </div>
     <br />
-    <div className="d-flex justify-content-center">
+    <div>
       {/* After a little research I think adding these classnames aren't a good way to style the page.
     I originally wanted the last columns in the grid to be center aligned, but I think that
     A) looks worse and B) is unneccesary, so perhaps not doing this is better */}
-      <Container className="about-intro">
+      <Container className="about-intro fencing-body">
         <Fade>
           <Row>
             <Col>
               <br />
+
               <p className="about-header text-uppercase text-center">
                 100 Years of Slashing, Parrying, Stabbing, and Reposting
               </p>
@@ -59,7 +74,7 @@ const About = () => (
               <br />
             </Col>
             <Col>
-              <img src={image1} width="653px" />
+              <img src={oldfencing2} width="653px" />
             </Col>
           </Row>
           <br />
@@ -72,19 +87,40 @@ const About = () => (
         <Container className="fencing-carousel">
           <Carousel>
             <Carousel.Item>
-              <img className="d-block w-100" src={image1} alt="First slide" />
+              <img
+                className="d-block w-100 fencing-img-crop"
+                src={fencingpic1}
+                alt="First slide"
+              />
             </Carousel.Item>
             <Carousel.Item>
-              <img className="d-block w-100" src={image1} alt="Second slide" />
+              <img
+                className="d-block w-100 fencing-img-crop"
+                src={fencingpic2}
+                alt="Second slide"
+              />
             </Carousel.Item>
             <Carousel.Item>
-              <img className="d-block w-100" src={image1} alt="Third slide" />
+              <img
+                className="d-block w-100 fencing-img-crop"
+                src={fencingpic3}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 fencing-img-crop"
+                src={fencingpic4}
+                alt="Third slide"
+              />
             </Carousel.Item>
           </Carousel>
         </Container>
+
         <br />
         <br />
-        <hr></hr>
+        {/* <img src={leftfoil} /> */}
+
         <div className="work-improvement">
           <Fade>
             <h2>OUR BELIEFS</h2>
@@ -108,9 +144,9 @@ const About = () => (
                 <br />
                 <p>
                   Within our club, we cultivate a positive environment towards
-                  exercise and athleticism. Fitness is a regular part of PFC, in
-                  addition to fencing. We encourage all members to participate
-                  in conditioning regardless of their current physical ability.
+                  exercise and athleticism. Fitness is a regular part of PFC and
+                  we encourage all members to participate in conditioning
+                  regardless of their current physical ability.
                 </p>
               </Col>
               <Col>
@@ -138,6 +174,7 @@ const About = () => (
             </Row>
           </Fade>
         </div>
+        {/* <img src={rightsaber} /> */}
       </Container>
     </div>
     <Footer></Footer>

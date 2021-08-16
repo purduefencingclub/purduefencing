@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
 import { Container, Row, Col, Carousel, Button, Form } from "react-bootstrap";
 import Fade from "react-reveal";
-import image1 from "../image1.jpeg";
+import image1 from "../images/image1.jpeg";
 import Footer from "../components/Footer";
 import Post from "../components/DashboardPost";
 
@@ -26,7 +26,9 @@ const Dashboard = (props) => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await axios.get("https://purduefencing.com/v1/api/blogs/display");
+      const res = await axios.get(
+        "https://purduefencing.com/v1/api/blogs/display"
+      );
       setPosts(res.data);
       console.log(res.data);
     };

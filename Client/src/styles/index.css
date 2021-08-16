@@ -152,6 +152,23 @@ device sizes. */
   font-family: "Oswald", sans-serif;
 }
 
+@media screen and (max-width: 700px) {
+  .heading-purdue {
+    padding-top: 20px;
+    color: rgb(56, 56, 56);
+    font-size: 40px;
+    margin-bottom: -40px;
+    margin-left: 3px;
+    font-family: "Noto Serif", serif;
+  }
+
+  .heading-fencing {
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+  }
+}
 .header-text {
   width: 70%;
   margin: 0 auto;
@@ -191,7 +208,7 @@ device sizes. */
 .secondary-nav {
   height: 500px;
   background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
-    url("../background1.png") no-repeat top center;
+    url("../images/background1.png") no-repeat top center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-left: 2000;
@@ -244,7 +261,7 @@ device sizes. */
 .officer-nav {
   height: 500px;
   background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
-    url("../officer-bg.jpeg") no-repeat top center;
+    url("../images/officer-bg.jpeg") no-repeat top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -255,6 +272,11 @@ device sizes. */
   font-family: "Oswald", sans-serif;
 }
 
+.officer-img {
+  height: 200px;
+  object-fit: cover;
+  object-position: 100% 50%;
+}
 .executive {
   width: 70%;
   justify-content: center;
@@ -279,7 +301,7 @@ device sizes. */
 .join-nav {
   height: 500px;
   background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
-    url("../joinbg.jpeg") no-repeat top center;
+    url("../images/joinbg.jpeg") no-repeat top center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-left: 2000;
@@ -306,7 +328,7 @@ device sizes. */
 .contact-nav {
   height: 500px;
   background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
-    url("../contactbg.jpeg") no-repeat top center;
+    url("../images/contactbg.jpeg") no-repeat top center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-left: 2000;
@@ -317,7 +339,7 @@ device sizes. */
 .news-nav {
   height: 500px;
   background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
-    url("../newsbg.jpeg") no-repeat top center;
+    url("../images/newsbg.jpeg") no-repeat top center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-left: 2000;
@@ -328,7 +350,7 @@ device sizes. */
 .beginner-nav {
   height: 500px;
   background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
-    url("../beginnerbg2.jpeg") no-repeat top center;
+    url("../images/beginnerbg2.jpeg") no-repeat top center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-left: 2000;
@@ -377,7 +399,7 @@ device sizes. */
 .sign-up-nav {
   height: 500px;
   background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
-    url("../signupbg.jpeg") no-repeat top center;
+    url("../images/signupbg.jpeg") no-repeat top center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-left: 2000;
@@ -387,7 +409,7 @@ device sizes. */
 .dashboard-nav {
   height: 500px;
   background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
-    url("../dashboardbg.jpeg") no-repeat top center;
+    url("../images/dashboardbg.jpeg") no-repeat top center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-left: 2000;
@@ -402,7 +424,7 @@ device sizes. */
 .admin-nav {
   height: 500px;
   background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
-    url("../dashboardbg.jpeg") no-repeat top center;
+    url("../images/dashboardbg.jpeg") no-repeat top center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-left: 2000;
@@ -416,7 +438,7 @@ device sizes. */
 .faq-nav {
   height: 500px;
   background: linear-gradient(to right, #d3c71fb9, #d3c71fb9),
-    url("../faqbg.jpeg") no-repeat top center;
+    url("../images/faqbg.jpeg") no-repeat top center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-left: 2000;
@@ -502,4 +524,25 @@ when editing the site. Sort of like our own mini CSS framework */
   .fencing-body {
     width: 100%;
   }
+  .fencing-jumbotron-header {
+    font-size: 65px;
+  }
+  .fencing-jumbotron-subheader {
+    font-size: 25px;
+  }
+}
+
+.divider-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.fencing-divider-subtitle {
+  padding-top: 10px;
+}
+
+.fencing-img-crop {
+  height: 600px;
+  width: 200px;
+  object-fit: cover;
+  object-position: 100% 0%;
 }

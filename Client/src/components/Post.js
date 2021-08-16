@@ -9,13 +9,13 @@ import {
   CardGroup,
 } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
-import image1 from "../image1.jpeg";
+import image1 from "../images/image1.jpeg";
 
 import "../styles/index.css";
 
 export default function Post({ post }) {
   const path = "/post/" + post._id;
-  
+
   const maxCharacterLength = 60;
   //var trimmedBody = post.body.substr(0, maxCharacterLength);
 
@@ -24,8 +24,7 @@ export default function Post({ post }) {
   //  Math.min(trimmedBody.length, trimmedBody.lastIndexOf(" "))
   //);
   //trimmedBody += "...";
-	const imagePath = `/images/${post.image}`
-
+  const imagePath = `/images/${post.image}`;
 
   return (
     <>

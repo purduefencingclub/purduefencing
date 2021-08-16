@@ -3,34 +3,34 @@ import { Nav, Container, Carousel, Row, Col, Image } from "react-bootstrap";
 import { Link } from "react-scroll";
 import { LinkContainer } from "react-router-bootstrap";
 import Fade from "react-reveal";
-import image1 from "../image1.jpeg";
-import divider from "../divider1.png";
-import olympic from "../olympicfencing.jpeg";
+import image1 from "../images/image1.jpeg";
+import divider from "../images/divider1.png";
+import olympic from "../images/olympicfencing.jpeg";
 import StickyBox from "react-sticky-box";
 import { Visible, Hidden } from "react-grid-system";
 
-import foil from "../foilpic.png";
-import saber from "../saberpic.png";
-import epee from "../epeepic.png";
+import foil from "../images/foilpic.png";
+import saber from "../images/saberpic.png";
+import epee from "../images/epeepic.png";
 
-import sabertarget from "../Fencing_saber_valid_surfaces.png";
-import epeetarget from "../Fencing_epee_valid_surfaces.png";
-import foiltarget from "../Fencing_foil_valid_surfaces_2009.png";
+import sabertarget from "../images/Fencing_saber_valid_surfaces.png";
+import epeetarget from "../images/Fencing_epee_valid_surfaces.png";
+import foiltarget from "../images/Fencing_foil_valid_surfaces_2009.png";
 
-import foilequipment from "../foilequipment.jpeg";
-import saberequipment from "../saberequipment.jpeg";
-import epeeequipment from "../epeeequipment.jpeg";
+import foilequipment from "../images/foilequipment.jpeg";
+import saberequipment from "../images/saberequipment.jpeg";
+import epeeequipment from "../images/epeeequipment.jpeg";
 
-import frontzipjacket from "../frontzipjacket.jpeg";
-import backzipjacket from "../backzipjacket.jpeg";
-import standardmask from "../standardmask.jpeg";
-import sabermask from "../sabermask.jpeg";
-import fencingknickers from "../fencingknickers.jpeg";
-import menschestprotector from "../menschestprotector.jpeg";
-import womenschestprotector from "../womenschestprotector.jpeg";
+import frontzipjacket from "../images/frontzipjacket.jpeg";
+import backzipjacket from "../images/backzipjacket.jpeg";
+import standardmask from "../images/standardmask.jpeg";
+import sabermask from "../images/sabermask.jpeg";
+import fencingknickers from "../images/fencingknickers.jpeg";
+import menschestprotector from "../images/menschestprotector.jpeg";
+import womenschestprotector from "../images/womenschestprotector.jpeg";
 
-import fencingpiste2 from "../fencingpiste2.png";
-import fencingpiste1 from "../fencingpiste1.jpeg";
+import fencingpiste2 from "../images/fencingpiste2.png";
+import fencingpiste1 from "../images/fencingpiste1.jpeg";
 
 import Footer from "../components/Footer";
 
@@ -79,7 +79,7 @@ const Beginner = () => {
                   <Link to="equipment">EQUIPMENT</Link>
                 </Nav.Link>
                 <Nav.Link className="sidebarlink">
-                  <Link to="equipment">STRIP</Link>
+                  <Link to="strip">STRIP</Link>
                 </Nav.Link>
               </Nav>
             </StickyBox>
@@ -221,7 +221,7 @@ const Beginner = () => {
                 meaning that sabrists can score touches with the edge of the
                 blade as well as the point. The target area in saber is from the
                 bend of the hips to the top of the head. This target area is
-                designed to simulate an opponent on horseback. DIY.
+                designed to simulate an opponent on horseback.
               </p>
               <Row xs={3} md={3}>
                 <Col>
@@ -287,6 +287,7 @@ const Beginner = () => {
               available in cotton and synthetic materials. Generally, cotton
               tends to be cheaper, but is heavier and hotter. Synthetic
               materials are cooler but more expensive.
+              <br />
               <br />
               Additionally, jackets come in either back-zip or front-zip.
               Back-zip jackets are universal (can be worn by both right-handed
@@ -411,7 +412,7 @@ const Beginner = () => {
               </p>
               <br />
               <Container className="fencing-image-center">
-                <img src={fencingpiste2} width="70%" />
+                <img src={fencingpiste2} width="100%" />
                 <br />
                 <p className="fencing-text">
                   All fencing bouts take place on a 14-meter strip, or "piste."
