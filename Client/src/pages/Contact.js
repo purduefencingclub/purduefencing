@@ -7,6 +7,8 @@ import divider from "../images/divider1.png";
 import Footer from "../components/Footer";
 import miranda2 from "../images/mirandasquare.jpg";
 import Navigation from "../components/Navigation";
+
+import logo from "../logo.svg";
 import "../styles/index.css";
 
 // To-Do: FORM VALIDATION YAY
@@ -22,7 +24,7 @@ const Contact = () => {
       email: email.value,
       message: message.value,
     };
-    let response = await fetch("http://localhost:5000/contact", {
+    let response = await fetch("https://purduefencing.com:5001/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
@@ -61,7 +63,7 @@ const Contact = () => {
             </p>
           </Fade>
           <br />
-          <Container>
+         {/* <Container>
             <Form onSubmit={handleSubmit}>
               <Form.Group
                 className="mb-3"
@@ -108,7 +110,7 @@ const Contact = () => {
                 {status}
               </Button>
             </Form>
-          </Container>
+          </Container> */}
           <br />
           <hr></hr>
           <Container className="contact-primary text-center">
@@ -123,6 +125,7 @@ const Contact = () => {
                 </Col>
                 <Col>
                   <p className="fencing-header">Club Contact Info</p>
+		  <Image src={logo} roundedCircle fluid width="40%" />
                   <p className="fencing-subheader">
                     purdue.fencing.club@gmail.com
                   </p>
