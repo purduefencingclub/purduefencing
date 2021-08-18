@@ -47,8 +47,8 @@ const Officers = () => (
       <div className="header-text">
         <Container>
           <Row>
-            <p className="heading-about">OFFICERS</p>
-            <p className="officer-date">2021 - 2022</p>
+            <p className="heading-fencing">OFFICERS</p>
+            <p className="heading-date">2021 - 2022</p>
           </Row>
         </Container>
       </div>
@@ -101,8 +101,8 @@ const Officers = () => (
                         <p className="officer-info">Hospitality</p>
                       </Col>
                       <Col>
-                        <img src={epeeicon} width="45%" />
-                        <p className="officer-info">Epee</p>
+                        <img src={foilicon} width="45%" />
+                        <p className="officer-info">Foil</p>
                       </Col>
                       <Col>
                         <img src={junior} width="50%" />

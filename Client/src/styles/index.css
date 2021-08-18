@@ -159,6 +159,12 @@ device sizes. */
   font-weight: bold;
   font-family: "Oswald", sans-serif;
 }
+.heading-date {
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}
 
 @media screen and (max-width: 700px) {
   .heading-purdue {
@@ -173,6 +179,12 @@ device sizes. */
   .heading-fencing {
     color: white;
     font-size: 100px;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+  }
+  .heading-date {
+    color: white;
+    font-size: 60px;
     font-weight: bold;
     font-family: "Oswald", sans-serif;
   }
