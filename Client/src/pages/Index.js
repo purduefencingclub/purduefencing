@@ -9,6 +9,7 @@ import { Visible, Hidden } from "react-grid-system";
 
 import fencingpic8 from "../images/fencingpic8.jpg";
 import fencingpic6 from "../images/fencingpic5.jpg";
+import callout from "../images/callout.jpeg";
 
 import uprightfoil from "../images/uprightfoil2.png";
 import foildivider from "../images/foildivider1.png";
@@ -20,7 +21,7 @@ import iu from "../images/iu.png";
 import notredame from "../images/notredame.png";
 import cleveland from "../images/cleveland.png";
 import northwestern from "../images/northwestern.png";
-import minnesota from "../images/minnesota.png";
+import michigan from "../images/michigan.png";
 import wayne from "../images/wayne.png";
 import { right } from "@popperjs/core";
 
@@ -65,13 +66,14 @@ const Index = () => (
           </Row>
           <br />
           <br />
-          <Row>
+          <Row xs={1} md={2}>
             <Col>
-              <img src={fencingpic6} width="500px" />
+              <img src={fencingpic6} width="100%" />
             </Col>
             <Col>
               <h2>The Official Fencing Club of Purdue University</h2>
-              <p className="home-text">
+              <br />
+              <p className="fencing-text">
                 Purdue Fencing Club is a co-ed club sports team. We are proud to
                 represent Purdue at collegiate tournaments with men and women
                 squads for foil, epee, and saber. We provide experiences in
@@ -90,11 +92,12 @@ const Index = () => (
         <br />
         <br />
         <Fade>
-          <Row>
+          <Row xs={1} md={2}>
             <Col>
-              <h1>Open to all skill levels</h1>
+              <h1>Open to All Skill Levels</h1>
               <h2>Beginners (and fencing masters) welcome!</h2>
-              <p className="home-text">
+              <br />
+              <p className="fencing-text">
                 The Purdue Fencing club welcomes anyone regardless of skill
                 level. If you're new and want to give fencing a try, we hold a
                 beginner's class to teach the basics of all three disciplines of
@@ -103,16 +106,38 @@ const Index = () => (
               </p>
             </Col>
             <Col>
-              <img src={fencingpic8} width="500px" />
+              <img src={fencingpic8} width="100%" />
             </Col>
           </Row>
         </Fade>
         <br />
         <br />
         <br />
-        {/* <div className="fencing-image-center divider-rotate-180 divider-flip-vertical">
-          <img src={rightsaber} width="50%" />
-        </div> */}
+        <hr />
+        <br />
+        <br />
+        <br />
+        <Fade>
+          <Row xs={1} md={2}>
+            <Col>
+              <img src={callout} width="100%" className="callout-img" />
+            </Col>
+            <Col>
+              <h2>Come to Our Club Callout for Fall 2021!</h2>
+              <br />
+              <p className="fencing-text">
+                PFC is holding our annual club callout on{" "}
+                <b>Tuesday, August 31st</b>, at MP5 in the Corec. We will be
+                demonstrating fencing bouts, introducing members, and answering
+                any questions you may have. All are welcome! We hope to see you
+                there.
+              </p>
+            </Col>
+          </Row>
+        </Fade>
+        <br />
+        <br />
+        <br />
         <hr />
         <br />
         <br />
@@ -127,7 +152,7 @@ const Index = () => (
               </Hidden>
               <Col>
                 <h2 className="text-center">
-                  Universities we've competed with
+                  Universities We've Competed With
                 </h2>
                 <Visible xs sm md>
                   <br />
@@ -148,7 +173,7 @@ const Index = () => (
           <br />
           <br />
           <Container className="universities">
-            <Row>
+            <Row xs={2} md={2} lg={4}>
               <Col className="d-flex justify-content-center">
                 <Image src={chicago} className="uni-logo" />
               </Col>
@@ -161,23 +186,20 @@ const Index = () => (
               <Col className="d-flex justify-content-center">
                 <img src={notredame} className="uni-logo" />
               </Col>
-            </Row>
-            <br />
-            <br />
-            <br />
-            <Row className="universities">
-              <Col className="d-flex justify-content-center">
-                <Image src={wayne} className="uni-logo" />
-              </Col>
-              <Col className="d-flex justify-content-center">
-                <Image src={minnesota} className="uni-logo" />
-              </Col>
-              <Col className="d-flex justify-content-center">
-                <img src={cleveland} className="uni-logo" />
-              </Col>
-              <Col className="d-flex justify-content-center">
-                <img src={northwestern} className="uni-logo" />
-              </Col>
+              <Hidden xs sm>
+                <Col className="d-flex justify-content-center">
+                  <Image src={wayne} className="uni-logo" />
+                </Col>
+                <Col className="d-flex justify-content-center">
+                  <Image src={michigan} className="uni-logo" />
+                </Col>
+                <Col className="d-flex justify-content-center">
+                  <img src={cleveland} className="uni-logo" />
+                </Col>
+                <Col className="d-flex justify-content-center">
+                  <img src={northwestern} className="uni-logo" />
+                </Col>
+              </Hidden>
             </Row>
           </Container>
         </Fade>
@@ -188,14 +210,57 @@ const Index = () => (
         <hr></hr>
         <br />
         <Container>
-          {/* <Fade>
-            <div className="university-header">
-              <h2>Members From All Over the Country</h2>
-            </div>
-          </Fade> */}
-          {/* Not really sure what to add here, maybe a map? */}
+          <Row>
+            <Hidden xs sm md>
+              <Col>
+                <img src={rightfoil} width="100%" />
+              </Col>
+            </Hidden>
+            <Col>
+              <h2 className="text-center">Practice Schedule Fall 2021</h2>
+              <Visible xs sm md>
+                <br />
+              </Visible>
+            </Col>
+            <Hidden xs sm md>
+              <Col>
+                <img
+                  src={rightsaber}
+                  className="divider-rotate-180"
+                  width="100%"
+                />
+              </Col>
+            </Hidden>
+          </Row>
+          <br />
+          <br />
+          <Container className="home-calendar text-center">
+            <p className="fencing-header">
+              All practices are in MP Room 5 of the Co-Rec.
+            </p>
+            <br />
+            <br />
+            <Row xs={3}>
+              <Col>
+                <p className="fencing-header">TUE</p>
+                <p className="fencing-subheader">9:00pm - 11:45pm</p>
+              </Col>
+              <Col>
+                <p className="fencing-header">THUR</p>
+                <p className="fencing-subheader">9:00pm - 11:45pm</p>
+              </Col>
+              <Col>
+                <p className="fencing-header">SUN</p>
+                <p className="fencing-subheader">2:00pm - 5:00pm</p>
+              </Col>
+            </Row>
+          </Container>
         </Container>
       </Container>
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
     <Footer></Footer>
   </>

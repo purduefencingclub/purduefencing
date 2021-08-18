@@ -50,7 +50,6 @@ const About = () => (
           <Row>
             <Col>
               <br />
-
               <p className="about-header text-uppercase text-center">
                 100 Years of Slashing, Parrying, Stabbing, and Reposting
               </p>
@@ -58,7 +57,7 @@ const About = () => (
           </Row>
           <br />
           <br />
-          <Row className="image-row-1">
+          <Row xs={1} md={2}>
             <Col>
               <h3>Happy 100th Anniversary!</h3>
               <br />
@@ -74,7 +73,7 @@ const About = () => (
               <br />
             </Col>
             <Col>
-              <img src={oldfencing2} width="653px" />
+              <img src={oldfencing2} width="400px" />
             </Col>
           </Row>
           <br />
@@ -126,7 +125,7 @@ const About = () => (
             <h2>OUR BELIEFS</h2>
             <br />
             <br />
-            <Row>
+            <Row xs={2} md={2} lg={4}>
               <Col>
                 <i class="fas fa-hands-helping fa-3x"></i>
                 <h2>Sportsmanship.</h2>
@@ -176,6 +175,13 @@ const About = () => (
         </div>
         {/* <img src={rightsaber} /> */}
       </Container>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
     <Footer></Footer>
   </>

@@ -1,11 +1,11 @@
 import React, { useState, setStatus } from "react";
-import { Nav, Container, Button, Row, Col, Form } from "react-bootstrap";
+import { Image, Container, Button, Row, Col, Form } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import Fade from "react-reveal";
 import image1 from "../images/image1.jpeg";
 import divider from "../images/divider1.png";
 import Footer from "../components/Footer";
-
+import miranda2 from "../images/mirandasquare.jpg";
 import Navigation from "../components/Navigation";
 import "../styles/index.css";
 
@@ -111,6 +111,25 @@ const Contact = () => {
           </Container>
           <br />
           <hr></hr>
+          <Container className="contact-primary text-center">
+            <Fade>
+              <Row xs={1} md={2}>
+                <Col>
+                  <p className="fencing-header">Primary Contact</p>
+                  <Image src={miranda2} roundedCircle fluid width="40%" />
+                  <p className="fencing-subheader">Miranda Carter</p>
+
+                  <p className="fencing-subheader">carte272@purdue.edu</p>
+                </Col>
+                <Col>
+                  <p className="fencing-header">Club Contact Info</p>
+                  <p className="fencing-subheader">
+                    purdue.fencing.club@gmail.com
+                  </p>
+                </Col>
+              </Row>
+            </Fade>
+          </Container>
         </Container>
       </div>
       <Footer></Footer>

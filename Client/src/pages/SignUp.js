@@ -26,44 +26,55 @@ const SignUp = () => (
     <div>
       <Container className="fencing-body">
         <h1>
-          The next beginner's practice session is: [date here] @[location]
+          The next beginner's practice session is: Thursday, September 2nd, at
+          MP5 in the Corec.
         </h1>
+        <br />
         <hr></hr>
         <Fade>
-          <h1>Pre-Practice Item 1: Sign the Waiver</h1>
+          <br />
+          <h2>Pre-Practice Item 1: Sign the Waiver</h2>
           <p className="fencing-text">
-            I'm baby beard cliche kombucha bushwick, biodiesel heirloom mlkshk.
-            8-bit hoodie listicle cold-pressed, gastropub intelligentsia ramps
-            swag migas disrupt activated charcoal kombucha 90's la croix.
-            Church-key cloud bread hoodie fam. Pinterest green juice cliche,
-            gentrify gluten-free typewriter tbh.
+            Before you can start fencing, you'll have to sign our waiver.
+            Fencing isn't dangerous, but it is a contact sport!
           </p>
           <Button variant="dark">Sign The Waiver Here</Button>
           <br />
           <Button variant="dark">Waiver for Minors</Button>
         </Fade>
+        <br />
         <hr></hr>
         <Fade>
-          <h1>Pre-Practice Item 2: Wear the Right Clothes</h1>
+          <br />
+          <h2>Pre-Practice Item 2: Wear the Right Clothes</h2>
           <p className="fencing-text">
-            Make sure you wear gym shoes and athletic clothing bla bla bla jeans
-            are bad
+            Make sure you wear gym shoes and athletic clothing to practice.
           </p>
+          <br />
         </Fade>
         <hr></hr>
+        <br />
         <Fade>
-          <h1>
+          <h2>
             (Optional) Pre-Practice Item 3: Skim the
             <a href="/beginner"> Beginner </a> Resource Page
-          </h1>
+          </h2>
           <p className="fencing-text">
             This page has some info on the basics of fencing that will give you
             a head start before practice. If you can't read it though, don't
             worry, we'll cover everything at practice.
           </p>
+          <br />
         </Fade>
         <hr></hr>
+        <h2>
+          If you've signed the waiver, and are wearing the right clothes, you're
+          ready to go! Just meet us at the Corec, and we've got the rest.
+          Welcome to fencing!
+        </h2>
       </Container>
+      <br />
+      <br />
     </div>
     <Footer></Footer>
   </>

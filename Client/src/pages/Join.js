@@ -12,6 +12,15 @@ import { LinkContainer } from "react-router-bootstrap";
 import Fade from "react-reveal";
 import image1 from "../images/image1.jpeg";
 import divider from "../images/divider1.png";
+import beginner from "../images/beginner.jpeg";
+import rightsaber from "../images/rightsaber1.png";
+import rightfoil from "../images/rightfoil.png";
+
+import team1 from "../images/team1.png";
+import callout from "../images/callout.jpeg";
+import fencingpic1 from "../images/fencingpic1.jpg";
+
+import { Visible, Hidden } from "react-grid-system";
 
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
@@ -34,9 +43,9 @@ const Join = () => (
       <div>
         <Container className="join-header">
           <Row>
-            <p className="heading-about">EN GARDE.</p>
-            <p className="heading-about">
-              READY. <span className="join-fence-text">FENCE.</span>
+            <p className="heading-join">
+              READY TO <br />
+              FENCE?
             </p>
           </Row>
         </Container>
@@ -45,107 +54,137 @@ const Join = () => (
     <br />
     <br />
     <br />
-    <h1 className="text-center">OPPORTUNITIES FOR BEGINNERS</h1>
-    <Container className="join-content-container">
-      <hr></hr>
-      <br />
-      <Row xs={1} md={2} className="g-4">
+    <Container className="fencing-body">
+      <Row>
+        <Hidden xs sm md>
+          <Col>
+            <img src={rightfoil} width="100%" />
+          </Col>
+        </Hidden>
         <Col>
-          <Card>
-            <Card.Img variant="bottom" src={image1} />
-            <Card.Body>
-              <Card.Title>Beginner's Class</Card.Title>
-              <Card.Text>
-                Learn to fence! Over a month, we will teach you how to Af
-                sriracha etsy gochujang swag hot chicken bicycle rights yuccie
-                hella slow-carb irony locavore fixie.
-                <br />
-                <br />
-                <LinkContainer to="/sign-up">
-                  <Button variant="dark">Sign up here!</Button>
-                </LinkContainer>
-                <br />
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer className="text-muted">
-              Next Class: August 29th
-              <br />@ The Corec, 4pm
-            </Card.Footer>
-          </Card>
+          <h1 className="text-center">UPCOMING EVENTS</h1>
+          <Visible xs sm md>
+            <br />
+            <hr />
+          </Visible>
         </Col>
-        <Col>
-          <Card>
-            <Card.Img variant="bottom" src={image1} />
-            <Card.Body>
-              <Card.Title>Attend a practice session</Card.Title>
-              <Card.Text>
-                This does not change the fact that in Antarctica there are 21
-                million penguins and in Malta there are 502,653 inhabitants. So
-                if the penguins decide to invade Malta, each Maltese will have
-                to fight 42 penguins.
-                <br />
-                <br />
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer className="text-muted">
-              Next Practice Session: August 29th
-              <br />@ The Corec Room 31415, 9pm
-            </Card.Footer>
-          </Card>
-        </Col>
+        <Hidden xs sm md>
+          <Col>
+            <img src={rightsaber} className="divider-rotate-180" width="100%" />
+          </Col>
+        </Hidden>
       </Row>
+      <Container>
+        <br />
+        <Row xs={1} md={3} className="g-4">
+          <Col>
+            <Card>
+              <Card.Img
+                variant="bottom"
+                src={fencingpic1}
+                className="officer-miranda"
+              />
+              <Card.Body>
+                <Card.Title>Be-Involved Fair</Card.Title>
+                <Card.Text>
+                  Come see us at the Be-Involved fair! We will have a booth with
+                  some fencing equipment on display. We'll also be happy to
+                  answer any questions!
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer className="text-muted">
+                August 21st 12-5pm <br />
+                Location: Black and Gold Fields
+              </Card.Footer>
+            </Card>
+          </Col>
+          <Col>
+            <Card>
+              <Card.Img
+                variant="bottom"
+                src={callout}
+                className="officer-miranda"
+              />
+              <Card.Body>
+                <Card.Title>PFC Call Out</Card.Title>
+                <Card.Text>
+                  Join us at our club call out! We'll be answering questions,
+                  introducing ourselves, and having some our members demonstrate
+                  fencing bouts!
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer className="text-muted">
+                Tuesday, August 31st @ 2pm
+                <br />
+                Location: Corec MP5
+              </Card.Footer>
+            </Card>
+          </Col>
+          <Col>
+            <Card>
+              <Card.Img
+                variant="right"
+                src={team1}
+                className="officer-miranda"
+              />
+              <Card.Body>
+                <Card.Title>
+                  First Official Fall 2021 Fencing Practice
+                </Card.Title>
+                <Card.Text>
+                  Come fence with us at our first fencing practice since 2020!
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer className="text-muted">
+                Tuesday August 24th @ 9pm <br />
+                Location: Corec MP5
+              </Card.Footer>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+      <br />
+      <br />
+      <br />
+      <h1 className="text-center">OPPORTUNITIES FOR BEGINNERS</h1>
+      <Container>
+        <hr></hr>
+        <br />
+        <Row xs={1} md={1}>
+          <Col>
+            <Card className="join-beginner">
+              <Card.Img
+                variant="bottom"
+                src={beginner}
+                className="join-beginner-img"
+              />
+              <Card.Body>
+                <Card.Title>Beginner's Class</Card.Title>
+                <Card.Text>
+                  Learn to fence! Over a month, our club members will teach you
+                  the basics of all three disciplines of fencing: foil, saber,
+                  and epee. We will provide all the equipment you'll need to get
+                  started. If you're interested, click the button below!
+                  <br />
+                  <br />
+                  <LinkContainer to="/sign-up">
+                    <Button variant="dark">New fencers, start here!</Button>
+                  </LinkContainer>
+                  <br />
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer className="text-muted">
+                Next Class: September 2nd 9-10:30pm
+                <br />
+                Location: Corec MP5
+              </Card.Footer>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
     </Container>
     <br />
     <br />
-    <h1 className="text-center">UPCOMING EVENTS</h1>
-    <Container className="join-content-container">
-      <hr></hr>
-      <br />
-      <Row xs={1} md={3} className="g-4">
-        <Col>
-          <Card>
-            <Card.Img variant="bottom" src={image1} />
-            <Card.Body>
-              <Card.Title>August Call Out</Card.Title>
-              <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer className="text-muted">August 29th @ 2pm</Card.Footer>
-          </Card>
-        </Col>
-        <Col>
-          <Card>
-            <Card.Img variant="bottom" src={image1} />
-            <Card.Body>
-              <Card.Title>Fencing Demo @ Wherever</Card.Title>
-              <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer className="text-muted">August 29th @ 2pm</Card.Footer>
-          </Card>
-        </Col>
-        <Col>
-          <Card>
-            <Card.Img variant="right" src={image1} />
-            <Card.Body>
-              <Card.Title>Club Fair Booth Thing</Card.Title>
-              <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer className="text-muted">August 29th @ 2pm</Card.Footer>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
     <br />
     <Footer></Footer>
   </>

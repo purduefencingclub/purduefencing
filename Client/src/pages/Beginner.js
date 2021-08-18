@@ -9,6 +9,13 @@ import olympic from "../images/olympicfencing.jpeg";
 import StickyBox from "react-sticky-box";
 import { Visible, Hidden } from "react-grid-system";
 
+import foilpic1 from "../images/foilpic1.jpeg";
+import saberpic1 from "../images/saberpic1.jpg";
+import saberpic2 from "../images/saberpic2.jpeg";
+import epeepic1 from "../images/epeepic1.jpeg";
+import epeepic2 from "../images/epeepic2.jpeg";
+import epeepic3 from "../images/epeepic3.jpeg";
+
 import foil from "../images/foilpic.png";
 import saber from "../images/saberpic.png";
 import epee from "../images/epeepic.png";
@@ -96,22 +103,22 @@ const Beginner = () => {
                 <Carousel>
                   <Carousel.Item>
                     <img
-                      className="d-block w-100"
-                      src={image1}
+                      className="d-block w-100 beginner-carousel-img"
+                      src={saberpic2}
                       alt="First slide"
                     />
                   </Carousel.Item>
                   <Carousel.Item>
                     <img
-                      className="d-block w-100"
-                      src={image1}
+                      className="d-block w-100 beginner-carousel-img"
+                      src={epeepic2}
                       alt="Second slide"
                     />
                   </Carousel.Item>
                   <Carousel.Item>
                     <img
-                      className="d-block w-100"
-                      src={image1}
+                      className="d-block w-100 beginner-carousel-img"
+                      src={epeepic3}
                       alt="Third slide"
                     />
                   </Carousel.Item>
@@ -152,19 +159,19 @@ const Beginner = () => {
               <Row xs={1} md={3}>
                 <Col>
                   <Fade>
-                    <img src={image1} width="100%" />
+                    <img src={foilpic1} width="100%" />
                     <p className="fencing-subtitle text-center">Foil</p>
                   </Fade>
                 </Col>
                 <Col>
                   <Fade>
-                    <img src={image1} width="100%" />
+                    <img src={saberpic1} width="100%" />
                     <p className="fencing-subtitle text-center">Saber</p>
                   </Fade>
                 </Col>
                 <Col>
                   <Fade>
-                    <img src={image1} width="100%" />
+                    <img src={epeepic1} width="100%" />
                     <p className="fencing-subtitle text-center">Epee</p>
                   </Fade>
                 </Col>
@@ -435,29 +442,6 @@ const Beginner = () => {
           </Container>
         </Container>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <br />
       <br />
       <br />

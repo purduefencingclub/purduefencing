@@ -16,12 +16,19 @@ import Footer from "../components/Footer";
 import rightsaber from "../images/rightsaber1.png";
 import rightfoil from "../images/rightfoil.png";
 
-import miranda from "../images/miranda.png";
+import miranda from "../images/miranda.jpg";
 import kayla from "../images/kayla.jpg";
 import lauren from "../images/lauren.png";
 import racheal from "../images/racheal.jpg";
 import ryan from "../images/ryan.png";
 import smeric from "../images/smeric.png";
+import kaitlyn from "../images/kailtlyn.jpeg";
+import jada from "../images/jada.jpeg";
+import alyssa from "../images/alyssa.jpeg";
+import erika from "../images/erika.JPG";
+import evan from "../images/evan.jpeg";
+import sasha from "../images/sasha.png";
+import maria from "../images/maria.png";
 
 import Navigation from "../components/Navigation";
 import "../styles/index.css";
@@ -72,7 +79,7 @@ const Officers = () => (
             </Col>
           </Row>
           <br />
-          <Row xs={1} md={3}>
+          <Row xs={1} sm={1} md={2} lg={2} xl={3}>
             {/* xs and md refer to the column number for extra small/medium devices (1 on mobile, 3 on laptop)
           (phones/laptops) which helps spacing on different device widths. 
           Need to add these to other pages */}
@@ -98,8 +105,8 @@ const Officers = () => (
                         <p className="officer-info">Epee</p>
                       </Col>
                       <Col>
-                        <img src={freshman} width="45%" />
-                        <p className="officer-info">Freshman</p>
+                        <img src={junior} width="50%" />
+                        <p className="officer-info">Junior</p>
                       </Col>
                     </Row>
                   </Card.Text>
@@ -108,7 +115,11 @@ const Officers = () => (
             </Col>
             <Col>
               <Card className="text-center officer-card">
-                <Card.Img variant="top" src={miranda} className="officer-img" />
+                <Card.Img
+                  variant="top"
+                  src={miranda}
+                  className="officer-miranda"
+                />
                 <Card.Body>
                   <Card.Title>Miranda Carter</Card.Title>
                   <Card.Subtitle className="mb-2 text-muted">
@@ -118,7 +129,7 @@ const Officers = () => (
                   <Card.Text>
                     <Row>
                       <Col>
-                        <i class="fas fa-dna fa-2x"></i>
+                        <i class="fas fa-microscope fa-2x"></i>
                         <p className="officer-info">Microbiology</p>
                       </Col>
                       <Col>
@@ -150,8 +161,8 @@ const Officers = () => (
                         <p className="officer-info">Chemistry</p>
                       </Col>
                       <Col>
-                        <img src={sabericon} width="45%" />
-                        <p className="officer-info">Saber</p>
+                        <img src={foilicon} width="45%" />
+                        <p className="officer-info">Foil</p>
                       </Col>
                       <Col>
                         <img src={junior} width="50%" />
@@ -178,12 +189,12 @@ const Officers = () => (
                         <p className="officer-info">Engineering</p>
                       </Col>
                       <Col>
-                        <i class="fas fa-khanda fa-2x"></i>
+                        <img src={foilicon} width="50%" />
                         <p className="officer-info">Foil</p>
                       </Col>
                       <Col>
-                        <i class="fas fa-user fa-2x"></i>
-                        <p className="officer-info">Senior</p>
+                        <img src={junior} width="50%" />
+                        <p className="officer-info">Junior</p>
                       </Col>
                     </Row>
                   </Card.Text>
@@ -192,7 +203,11 @@ const Officers = () => (
             </Col>
             <Col>
               <Card className="text-center officer-card">
-                <Card.Img variant="top" src={image1} />
+                <Card.Img
+                  variant="top"
+                  src={kaitlyn}
+                  className="officer-kaitlyn"
+                />
                 <Card.Body>
                   <Card.Title>Kaitlyn Cooper</Card.Title>
                   <Card.Subtitle className="mb-2 text-muted">
@@ -202,15 +217,15 @@ const Officers = () => (
                   <Card.Text>
                     <Row>
                       <Col>
-                        <i class="fas fa-dna fa-2x"></i>
-                        <p className="officer-info">Genetics</p>
+                        <i class="fas fa-seedling fa-2x"></i>
+                        <p className="officer-info">Biology</p>
                       </Col>
                       <Col>
-                        <i class="fas fa-khanda fa-2x"></i>
+                        <img src={sabericon} width="50%" />
                         <p className="officer-info">Saber</p>
                       </Col>
                       <Col>
-                        <i class="fas fa-user fa-2x"></i>
+                        <img src={senior} width="50%" />
                         <p className="officer-info">Senior</p>
                       </Col>
                     </Row>
@@ -243,10 +258,10 @@ const Officers = () => (
           </Col>
         </Row>
         <br />
-        <Row xs={1} md={3}>
+        <Row xs={1} sm={1} md={2} lg={2} xl={3}>
           <Col>
             <Card className="text-center officer-card">
-              <Card.Img variant="top" src={image1} />
+              <Card.Img variant="top" src={jada} className="officer-jada" />
               <Card.Body>
                 <Card.Title>Jada Johnson</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">
@@ -256,16 +271,16 @@ const Officers = () => (
                 <Card.Text>
                   <Row>
                     <Col>
-                      <i class="fas fa-dna fa-2x"></i>
-                      <p className="officer-info">Genetics</p>
+                      <i class="fas fa-book fa-2x"></i>
+                      <p className="officer-info">Creative Writing</p>
                     </Col>
                     <Col>
-                      <i class="fas fa-khanda fa-2x"></i>
+                      <img src={epeeicon} width="45%" />
                       <p className="officer-info">Epee</p>
                     </Col>
                     <Col>
-                      <i class="fas fa-user fa-2x"></i>
-                      <p className="officer-info">Senior</p>
+                      <img src={junior} width="50%" />
+                      <p className="officer-info">Junior</p>
                     </Col>
                   </Row>
                 </Card.Text>
@@ -284,16 +299,16 @@ const Officers = () => (
                 <Card.Text>
                   <Row>
                     <Col>
-                      <i class="fas fa-dna fa-2x"></i>
-                      <p className="officer-info">Genetics</p>
+                      <i class="fas fa-gamepad fa-2x"></i>
+                      <p className="officer-info">Game Design</p>
                     </Col>
                     <Col>
-                      <i class="fas fa-khanda fa-2x"></i>
-                      <p className="officer-info">Foil</p>
+                      <img src={epeeicon} width="45%" />
+                      <p className="officer-info">Epee</p>
                     </Col>
                     <Col>
-                      <i class="fas fa-user fa-2x"></i>
-                      <p className="officer-info">Senior</p>
+                      <img src={junior} width="50%" />
+                      <p className="officer-info">Junior</p>
                     </Col>
                   </Row>
                 </Card.Text>
@@ -310,18 +325,18 @@ const Officers = () => (
                 </Card.Subtitle>
                 <br />
                 <Card.Text>
-                  <Row>
+                  <Row sm={3}>
                     <Col>
                       <i class="fas fa-laptop-code fa-2x"></i>
                       <p className="officer-info">CSE</p>
                     </Col>
                     <Col>
-                      <i class="fas fa-khanda fa-2x"></i>
+                      <img src={foilicon} width="50%" />
                       <p className="officer-info">Foil</p>
                     </Col>
                     <Col>
-                      <i class="fas fa-user fa-2x"></i>
-                      <p className="officer-info">Senior</p>
+                      <img src={junior} width="50%" />
+                      <p className="officer-info">Junior</p>
                     </Col>
                   </Row>
                 </Card.Text>
@@ -330,7 +345,7 @@ const Officers = () => (
           </Col>
           <Col>
             <Card className="text-center officer-card">
-              <Card.Img variant="top" src={image1} />
+              <Card.Img variant="top" src={evan} className="officer-evan" />
               <Card.Body>
                 <Card.Title>Evan Heiss</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">
@@ -340,15 +355,15 @@ const Officers = () => (
                 <Card.Text>
                   <Row>
                     <Col>
-                      <i class="fas fa-dna fa-2x"></i>
-                      <p className="officer-info">Genetics</p>
+                      <i class="fas fa-plane fa-2x"></i>
+                      <p className="officer-info">AAE</p>
                     </Col>
                     <Col>
-                      <i class="fas fa-khanda fa-2x"></i>
-                      <p className="officer-info">Foil</p>
+                      <img src={sabericon} width="50%" />
+                      <p className="officer-info">Saber</p>
                     </Col>
                     <Col>
-                      <i class="fas fa-user fa-2x"></i>
+                      <img src={sophomore} width="50%" />
                       <p className="officer-info">Sophomore</p>
                     </Col>
                   </Row>
@@ -358,7 +373,7 @@ const Officers = () => (
           </Col>
           <Col>
             <Card className="text-center officer-card">
-              <Card.Img variant="top" src={image1} />
+              <Card.Img variant="top" src={sasha} className="officer-sasha" />
               <Card.Body>
                 <Card.Title>Sasha Thomas</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">
@@ -372,11 +387,11 @@ const Officers = () => (
                       <p className="officer-info">Cybersecurity</p>
                     </Col>
                     <Col>
-                      <i class="fas fa-khanda fa-2x"></i>
+                      <img src={sabericon} width="50%" />
                       <p className="officer-info">Saber</p>
                     </Col>
                     <Col>
-                      <i class="fas fa-user fa-2x"></i>
+                      <img src={junior} width="50%" />
                       <p className="officer-info">Junior</p>
                     </Col>
                   </Row>
@@ -386,7 +401,7 @@ const Officers = () => (
           </Col>
           <Col>
             <Card className="text-center officer-card">
-              <Card.Img variant="top" src={image1} />
+              <Card.Img variant="top" src={maria} />
               <Card.Body>
                 <Card.Title>Maria Soare</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">
@@ -396,69 +411,15 @@ const Officers = () => (
                 <Card.Text>
                   <Row>
                     <Col>
-                      <i class="fas fa-dna fa-2x"></i>
-                      <p className="officer-info">Genetics</p>
+                      <i class="fas fa-plane fa-2x"></i>
+                      <p className="officer-info">AAE</p>
                     </Col>
                     <Col>
-                      <i class="fas fa-khanda fa-2x"></i>
-                      <p className="officer-info">Foil</p>
+                      <img src={epeeicon} width="50%" />
+                      <p className="officer-info">Epee</p>
                     </Col>
                     <Col>
-                      <i class="fas fa-user fa-2x"></i>
-                      <p className="officer-info">Senior</p>
-                    </Col>
-                  </Row>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card className="text-center officer-card">
-              <Card.Img variant="top" src={image1} />
-              <Card.Body>
-                <Card.Title>Alyssa Hirsch</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">Coach</Card.Subtitle>
-                <br />
-                <Card.Text>
-                  <Row>
-                    <Col>
-                      <i class="fas fa-dna fa-2x"></i>
-                      <p className="officer-info">Genetics</p>
-                    </Col>
-                    <Col>
-                      <i class="fas fa-khanda fa-2x"></i>
-                      <p className="officer-info">Foil</p>
-                    </Col>
-                    <Col>
-                      <i class="fas fa-user fa-2x"></i>
-                      <p className="officer-info">Senior</p>
-                    </Col>
-                  </Row>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card className="text-center officer-card">
-              <Card.Img variant="top" src={image1} />
-              <Card.Body>
-                <Card.Title>Erika Kvam</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  Advisor
-                </Card.Subtitle>
-                <br />
-                <Card.Text>
-                  <Row>
-                    <Col>
-                      <i class="fas fa-dna fa-2x"></i>
-                      <p className="officer-info">Genetics</p>
-                    </Col>
-                    <Col>
-                      <i class="fas fa-khanda fa-2x"></i>
-                      <p className="officer-info">Foil</p>
-                    </Col>
-                    <Col>
-                      <i class="fas fa-user fa-2x"></i>
+                      <img src={senior} width="50%" />
                       <p className="officer-info">Senior</p>
                     </Col>
                   </Row>
@@ -470,8 +431,86 @@ const Officers = () => (
         <br />
         <br />
         <br />
+        <Container>
+          <Row>
+            <Col>
+              <img
+                src={rightfoil}
+                width="100%"
+                className="fencing-divider-img"
+              />
+            </Col>
+            <Col>
+              <h2 className="text-center font-weight-bold fencing-divider-subtitle">
+                STAFF
+              </h2>
+            </Col>
+            <Col>
+              <img
+                src={rightsaber}
+                className="divider-rotate-180 fencing-divider-img"
+                width="100%"
+              />
+            </Col>
+          </Row>
+          <Container className="staff-wrapper">
+            <Row xs={1} md={2}>
+              <Col>
+                <Card className="text-center alyssa-card">
+                  <Card.Img src={alyssa} width="400px" />
+                  <Card.Body>
+                    <Card.Title>Alyssa Hirsch</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">
+                      Coach
+                    </Card.Subtitle>
+                    <br />
+                    <Card.Text>
+                      <Row>
+                        <Col>
+                          <i class="fas fa-church fa-2x"></i>
+                          <p className="officer-info">History</p>
+                        </Col>
+                        <Col>
+                          <i class="fas fa-khanda fa-2x"></i>
+                          <p className="officer-info">Coach</p>
+                        </Col>
+                        <Col>
+                          <img src={freshman} width="25%" />
+                          <p className="officer-info">Grad Student</p>
+                        </Col>
+                      </Row>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col>
+                <Card className="text-center erika-card">
+                  <Card.Img src={erika} width="300px" />
+                  <Card.Body>
+                    <Card.Title>Erika Kvam</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">
+                      Advisor
+                    </Card.Subtitle>
+                    <br />
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </Container>
+        </Container>
       </Container>
     </div>
+    <br />
+    <br />
+
+    <br />
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
     <Footer></Footer>
   </>
 );
