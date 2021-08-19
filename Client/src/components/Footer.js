@@ -21,30 +21,38 @@ const Footer = () => (
         </Hidden>
         <Col className="footer-icons">
           <Container>
-            <a href="https://twitter.com/purduefencing?lang=en">
-              <FontAwesomeIcon
-                icon={faTwitter}
-                size="2x"
-                color="white"
-                className="footer-icon"
-              />
-            </a>
-            <a href="https://www.instagram.com/purduefencing/?hl=en">
-              <FontAwesomeIcon
-                icon={faInstagram}
-                size="2x"
-                color="white"
-                className="footer-icon"
-              />
-            </a>
-            <a href="https://www.facebook.com/purduefencing/">
-              <FontAwesomeIcon
-                icon={faFacebook}
-                size="2x"
-                color="white"
-                className="footer-icon"
-              />
-            </a>
+            <Row xs={3}>
+              <Col>
+                <a href="https://twitter.com/purduefencing?lang=en">
+                  <FontAwesomeIcon
+                    icon={faTwitter}
+                    size="2x"
+                    color="white"
+                    className="footer-icon"
+                  />
+                </a>
+              </Col>
+              <Col>
+                <a href="https://www.instagram.com/purduefencing/?hl=en">
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    size="2x"
+                    color="white"
+                    className="footer-icon"
+                  />
+                </a>
+              </Col>
+              <Col>
+                <a href="https://www.facebook.com/purduefencing/">
+                  <FontAwesomeIcon
+                    icon={faFacebook}
+                    size="2x"
+                    color="white"
+                    className="footer-icon"
+                  />
+                </a>
+              </Col>
+            </Row>
           </Container>
         </Col>
       </Row>

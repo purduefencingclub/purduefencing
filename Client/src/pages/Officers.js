@@ -55,7 +55,7 @@ const Officers = () => (
     </div>
     <br />
     <div>
-      <Container className="executive">
+      <Container className="executive fencing-body">
         <Fade>
           <Row>
             <Col>
@@ -79,7 +79,7 @@ const Officers = () => (
             </Col>
           </Row>
           <br />
-          <Row xs={1} sm={1} md={2} lg={2} xl={3}>
+          <Row xs={1} sm={2} md={2} lg={2} xl={3}>
             {/* xs and md refer to the column number for extra small/medium devices (1 on mobile, 3 on laptop)
           (phones/laptops) which helps spacing on different device widths. 
           Need to add these to other pages */}
@@ -95,7 +95,7 @@ const Officers = () => (
                   </Card.Subtitle>
                   <br />
                   <Card.Text>
-                    <Row>
+                    <Row xs={3} md={3}>
                       <Col>
                         <i class="fas fa-hotel fa-2x"></i>
                         <p className="officer-info">Hospitality</p>
@@ -127,7 +127,7 @@ const Officers = () => (
                   </Card.Subtitle>
                   <br />
                   <Card.Text>
-                    <Row>
+                    <Row xs={3} md={3}>
                       <Col>
                         <i class="fas fa-microscope fa-2x"></i>
                         <p className="officer-info">Microbiology</p>
@@ -155,7 +155,7 @@ const Officers = () => (
                   </Card.Subtitle>
                   <br />
                   <Card.Text>
-                    <Row>
+                    <Row xs={3} md={3}>
                       <Col>
                         <i class="fas fa-atom fa-2x"></i>
                         <p className="officer-info">Chemistry</p>
@@ -183,7 +183,7 @@ const Officers = () => (
                   </Card.Subtitle>
                   <br />
                   <Card.Text>
-                    <Row>
+                    <Row xs={3} md={3}>
                       <Col>
                         <i class="fas fa-cogs fa-2x"></i>
                         <p className="officer-info">Engineering</p>
@@ -215,7 +215,7 @@ const Officers = () => (
                   </Card.Subtitle>
                   <br />
                   <Card.Text>
-                    <Row>
+                    <Row xs={3} md={3}>
                       <Col>
                         <i class="fas fa-seedling fa-2x"></i>
                         <p className="officer-info">Biology</p>
@@ -239,7 +239,7 @@ const Officers = () => (
         <br />
         <br />
       </Container>
-      <Container className="non-executive">
+      <Container>
         <Row>
           <Col>
             <img src={rightfoil} width="100%" className="fencing-divider-img" />
@@ -269,7 +269,7 @@ const Officers = () => (
                 </Card.Subtitle>
                 <br />
                 <Card.Text>
-                  <Row>
+                  <Row xs={3} md={3}>
                     <Col>
                       <i class="fas fa-book fa-2x"></i>
                       <p className="officer-info">Creative Writing</p>
@@ -297,7 +297,7 @@ const Officers = () => (
                 </Card.Subtitle>
                 <br />
                 <Card.Text>
-                  <Row>
+                  <Row xs={3} md={3}>
                     <Col>
                       <i class="fas fa-gamepad fa-2x"></i>
                       <p className="officer-info">Game Design</p>
@@ -325,7 +325,7 @@ const Officers = () => (
                 </Card.Subtitle>
                 <br />
                 <Card.Text>
-                  <Row sm={3}>
+                  <Row xs={3} md={3}>
                     <Col>
                       <i class="fas fa-laptop-code fa-2x"></i>
                       <p className="officer-info">CSE</p>
@@ -353,7 +353,7 @@ const Officers = () => (
                 </Card.Subtitle>
                 <br />
                 <Card.Text>
-                  <Row>
+                  <Row xs={3} md={3}>
                     <Col>
                       <i class="fas fa-plane fa-2x"></i>
                       <p className="officer-info">AAE</p>
@@ -381,7 +381,7 @@ const Officers = () => (
                 </Card.Subtitle>
                 <br />
                 <Card.Text>
-                  <Row>
+                  <Row xs={3} md={3}>
                     <Col>
                       <i class="fas fa-server fa-2x"></i>
                       <p className="officer-info">Cybersecurity</p>
@@ -409,7 +409,7 @@ const Officers = () => (
                 </Card.Subtitle>
                 <br />
                 <Card.Text>
-                  <Row>
+                  <Row xs={3} md={3}>
                     <Col>
                       <i class="fas fa-plane fa-2x"></i>
                       <p className="officer-info">AAE</p>

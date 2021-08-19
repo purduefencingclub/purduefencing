@@ -37,7 +37,7 @@ const Navigation = () => (
                 <Nav.Link className="navlink">ABOUT</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/join">
-                <Nav.Link className="navlink">JOIN US</Nav.Link>
+                <Nav.Link className="navlink">JOIN</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/contact">
                 <Nav.Link className="navlink">CONTACT</Nav.Link>

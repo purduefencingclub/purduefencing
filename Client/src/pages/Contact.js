@@ -46,7 +46,7 @@ const Contact = () => {
         <div className="header-text">
           <Container>
             <Row>
-              <p className="heading-about">GET IN TOUCHE</p>
+              <p className="heading-fencing">GET IN TOUCHE</p>
             </Row>
           </Container>
         </div>
@@ -63,7 +63,7 @@ const Contact = () => {
             </p>
           </Fade>
           <br />
-         {/* <Container>
+          {/* <Container>
             <Form onSubmit={handleSubmit}>
               <Form.Group
                 className="mb-3"
@@ -124,11 +124,19 @@ const Contact = () => {
                   <p className="fencing-subheader">carte272@purdue.edu</p>
                 </Col>
                 <Col>
-                  <p className="fencing-header">Club Contact Info</p>
-		  <Image src={logo} roundedCircle fluid width="40%" />
-                  <p className="fencing-subheader">
-                    purdue.fencing.club@gmail.com
-                  </p>
+                  <Row xs={1}>
+                    <Col>
+                      <p className="fencing-header">Club Contact Info</p>
+                    </Col>
+                    <Col>
+                      <Image src={logo} roundedCircle fluid width="40%" />
+                    </Col>
+                    <Col>
+                      <p className="fencing-subtitle">
+                        purdue.fencing.club@gmail.com
+                      </p>
+                    </Col>
+                  </Row>
                 </Col>
               </Row>
             </Fade>

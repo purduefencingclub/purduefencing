@@ -84,13 +84,17 @@ const Index = () => (
           </Row>
         </Fade>
         {/* Quick note, I'm using breaks for quick spacing so I don't have to add more CSS, but this will get changed */}
-        <br />
-        <br />
-        <br />
+        <Hidden xs>
+          <br />
+          <br />
+          <br />
+        </Hidden>
         <hr />
-        <br />
-        <br />
-        <br />
+        <Hidden xs>
+          <br />
+          <br />
+          <br />
+        </Hidden>
         <Fade>
           <Row xs={1} md={2}>
             <Col>
@@ -110,19 +114,34 @@ const Index = () => (
             </Col>
           </Row>
         </Fade>
-        <br />
-        <br />
-        <br />
+        <Hidden xs>
+          <br />
+          <br />
+          <br />
+        </Hidden>
+        <Visible xs>
+          <br />
+          <br />
+        </Visible>
         <hr />
-        <br />
-        <br />
-        <br />
+        <Hidden xs>
+          <br />
+          <br />
+          <br />
+        </Hidden>
+        <Visible xs>
+          <br />
+          <br />
+        </Visible>
         <Fade>
           <Row xs={1} md={2}>
             <Col>
               <img src={callout} width="100%" className="callout-img" />
             </Col>
             <Col>
+              <Visible xs>
+                <br />
+              </Visible>
               <h2>Come to Our Club Callout for Fall 2021!</h2>
               <br />
               <p className="fencing-text">
@@ -135,13 +154,17 @@ const Index = () => (
             </Col>
           </Row>
         </Fade>
-        <br />
-        <br />
-        <br />
+        <Hidden xs>
+          <br />
+          <br />
+          <br />
+        </Hidden>
         <hr />
-        <br />
-        <br />
-        <br />
+        <Hidden xs>
+          <br />
+          <br />
+          <br />
+        </Hidden>
         <Fade>
           <div className="university-header">
             <Row>
