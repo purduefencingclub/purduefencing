@@ -55,7 +55,7 @@ const Officers = () => (
     </div>
     <br />
     <div>
-      <Container className="executive fencing-body">
+      <Container className="fencing-body">
         <Fade>
           <Row>
             <Col>
@@ -239,7 +239,7 @@ const Officers = () => (
         <br />
         <br />
       </Container>
-      <Container>
+      <Container className="fencing-body">
         <Row>
           <Col>
             <img src={rightfoil} width="100%" className="fencing-divider-img" />
@@ -453,6 +453,7 @@ const Officers = () => (
               />
             </Col>
           </Row>
+          <br />
           <Container className="staff-wrapper">
             <Row xs={1} md={2}>
               <Col>

@@ -708,5 +708,6 @@ when editing the site. Sort of like our own mini CSS framework */
   }
 }
 
-@media screen and (max-width: 330px) {
+.divider-rotate-180 {
+  transform: rotate(180deg);
 }
