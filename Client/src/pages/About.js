@@ -35,7 +35,7 @@ const About = () => (
       <div className="header-text">
         <Container>
           <Row>
-            <p className="heading-about">ABOUT US</p>
+            <p className="heading-fencing">ABOUT US</p>
           </Row>
         </Container>
       </div>
@@ -50,7 +50,7 @@ const About = () => (
           <Row>
             <Col>
               <br />
-              <p className="about-header text-uppercase text-center">
+              <p className="fencing-header text-uppercase text-center">
                 100 Years of Slashing, Parrying, Stabbing, and Reposting
               </p>
             </Col>
@@ -61,7 +61,7 @@ const About = () => (
             <Col>
               <h3>Happy 100th Anniversary!</h3>
               <br />
-              <p>
+              <p className="fencing-text">
                 The Purdue Fencing Club was founded in 1922 as a five-man
                 varsity fencing squad. As the varsity squad gained popularity,
                 in 1935, an honorary fraternal order, Silver Mask, formed. In
@@ -73,7 +73,7 @@ const About = () => (
               <br />
             </Col>
             <Col>
-              <img src={oldfencing2} width="400px" />
+              <img src={oldfencing2} width="100%" />
             </Col>
           </Row>
           <br />
@@ -90,6 +90,7 @@ const About = () => (
                 className="d-block w-100 fencing-img-crop"
                 src={fencingpic1}
                 alt="First slide"
+                className="about-carousel-img"
               />
             </Carousel.Item>
             <Carousel.Item>
@@ -97,6 +98,7 @@ const About = () => (
                 className="d-block w-100 fencing-img-crop"
                 src={fencingpic2}
                 alt="Second slide"
+                className="about-carousel-img"
               />
             </Carousel.Item>
             <Carousel.Item>
@@ -104,6 +106,7 @@ const About = () => (
                 className="d-block w-100 fencing-img-crop"
                 src={fencingpic3}
                 alt="Third slide"
+                className="about-carousel-img"
               />
             </Carousel.Item>
             <Carousel.Item>
@@ -111,6 +114,7 @@ const About = () => (
                 className="d-block w-100 fencing-img-crop"
                 src={fencingpic4}
                 alt="Third slide"
+                className="about-carousel-img"
               />
             </Carousel.Item>
           </Carousel>
@@ -125,7 +129,7 @@ const About = () => (
             <h2>OUR BELIEFS</h2>
             <br />
             <br />
-            <Row xs={2} md={2} lg={4}>
+            <Row xs={1} md={2} lg={4}>
               <Col>
                 <i class="fas fa-hands-helping fa-3x"></i>
                 <h2>Sportsmanship.</h2>

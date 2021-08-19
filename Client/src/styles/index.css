@@ -262,6 +262,11 @@ device sizes. */
   width: 70%;
   font-family: "Oswald", sans-serif;
 }
+.about-carousel-img {
+  height: 300px;
+  object-fit: cover;
+  object-position: 100% 30%;
+}
 /* These text-aligns can probably be done with bootstrap classes */
 .image-center {
   padding-right: 53px;
