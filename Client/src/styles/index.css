@@ -655,6 +655,9 @@ when editing the site. Sort of like our own mini CSS framework */
 }
 
 @media screen and (max-width: 770px) {
+  .fencing-body {
+    width: 95%;
+  }
   .fencing-jumbotron-header {
     font-size: 65px;
   }
@@ -698,7 +701,7 @@ when editing the site. Sort of like our own mini CSS framework */
 }
 @media screen and (max-width: 400px) {
   .officer-info {
-    font-size: 13px;
+    font-size: 16px;
   }
   .fencing-header {
     font-size: 30px;

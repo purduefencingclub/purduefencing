@@ -130,11 +130,11 @@ const Officers = () => (
                     <Row xs={3} md={3}>
                       <Col>
                         <i class="fas fa-microscope fa-2x"></i>
-                        <p className="officer-info">Microbiology</p>
+                        <p className="officer-info text-nowrap">Microbiology</p>
                       </Col>
                       <Col>
-                        <img src={foilicon} width="50%" />
-                        <p className="officer-info">Foil</p>
+                        <img src={epeeicon} width="50%" />
+                        <p className="officer-info">Epee</p>
                       </Col>
                       <Col>
                         <img src={senior} width="50%" />
@@ -185,8 +185,8 @@ const Officers = () => (
                   <Card.Text>
                     <Row xs={3} md={3}>
                       <Col>
-                        <i class="fas fa-cogs fa-2x"></i>
-                        <p className="officer-info">Engineering</p>
+                        <i class="fas fa-brain fa-2x"></i>
+                        <p className="officer-info">Psychology</p>
                       </Col>
                       <Col>
                         <img src={foilicon} width="50%" />
@@ -233,6 +233,36 @@ const Officers = () => (
                 </Card.Body>
               </Card>
             </Col>
+            <Col>
+              <Card className="text-center officer-card">
+                <Card.Img variant="top" src={jada} className="officer-jada" />
+                <Card.Body>
+                  <Card.Title>Jada Johnson</Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">
+                    Fundraising
+                  </Card.Subtitle>
+                  <br />
+                  <Card.Text>
+                    <Row xs={3} md={3}>
+                      <Col>
+                        <i class="fas fa-book fa-2x"></i>
+                        <p className="officer-info text-nowrap">
+                          Creative Writing
+                        </p>
+                      </Col>
+                      <Col>
+                        <img src={epeeicon} width="45%" />
+                        <p className="officer-info">Epee</p>
+                      </Col>
+                      <Col>
+                        <img src={junior} width="50%" />
+                        <p className="officer-info">Junior</p>
+                      </Col>
+                    </Row>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
           </Row>
         </Fade>
         <br />
@@ -259,34 +289,6 @@ const Officers = () => (
         </Row>
         <br />
         <Row xs={1} sm={1} md={2} lg={2} xl={3}>
-          <Col>
-            <Card className="text-center officer-card">
-              <Card.Img variant="top" src={jada} className="officer-jada" />
-              <Card.Body>
-                <Card.Title>Jada Johnson</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  Fundraising
-                </Card.Subtitle>
-                <br />
-                <Card.Text>
-                  <Row xs={3} md={3}>
-                    <Col>
-                      <i class="fas fa-book fa-2x"></i>
-                      <p className="officer-info">Creative Writing</p>
-                    </Col>
-                    <Col>
-                      <img src={epeeicon} width="45%" />
-                      <p className="officer-info">Epee</p>
-                    </Col>
-                    <Col>
-                      <img src={junior} width="50%" />
-                      <p className="officer-info">Junior</p>
-                    </Col>
-                  </Row>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
           <Col>
             <Card className="text-center officer-card">
               <Card.Img variant="top" src={ryan} />
@@ -364,7 +366,7 @@ const Officers = () => (
                     </Col>
                     <Col>
                       <img src={sophomore} width="50%" />
-                      <p className="officer-info">Sophomore</p>
+                      <p className="officer-info text-nowrap">Sophomore</p>
                     </Col>
                   </Row>
                 </Card.Text>
@@ -384,7 +386,7 @@ const Officers = () => (
                   <Row xs={3} md={3}>
                     <Col>
                       <i class="fas fa-server fa-2x"></i>
-                      <p className="officer-info">Cybersecurity</p>
+                      <p className="officer-info text-nowrap">Cybersecurity</p>
                     </Col>
                     <Col>
                       <img src={sabericon} width="50%" />
