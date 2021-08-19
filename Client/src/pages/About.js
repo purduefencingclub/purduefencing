@@ -83,7 +83,7 @@ const About = () => (
         <hr></hr>
         <br />
         <br />
-        <Container className="fencing-carousel">
+        <Container className="fencing-carousel text-center">
           <Carousel>
             <Carousel.Item>
               <img
