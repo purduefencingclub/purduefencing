@@ -17,13 +17,13 @@ export default function Post({ post }) {
   const path = "/post/" + post._id;
 
   const maxCharacterLength = 60;
-  //var trimmedBody = post.body.substr(0, maxCharacterLength);
+  var trimmedBody = post.body.substr(0, maxCharacterLength);
 
-  //trimmedBody = trimmedBody.substr(
-  //  0,
-  //  Math.min(trimmedBody.length, trimmedBody.lastIndexOf(" "))
-  //);
-  //trimmedBody += "...";
+  trimmedBody = trimmedBody.substr(
+    0,
+    Math.min(trimmedBody.length, trimmedBody.lastIndexOf(" "))
+  );
+  trimmedBody += "...";
   const imagePath = `/images/${post.image}`;
 
   return (
@@ -31,12 +31,16 @@ export default function Post({ post }) {
       <div>
         <Card>
           <LinkContainer to={path}>
-            <Card.Img variant="top" src={imagePath} />
+            <Card.Img
+              variant="top"
+              src={imagePath}
+              className="fencing-news-img"
+            />
           </LinkContainer>
           <Card.Body>
             <Card.Title>{post.title}</Card.Title>
             <Card.Text>
-              {post.body}
+              {trimmedBody}
               <br />
               <br />
               <br />

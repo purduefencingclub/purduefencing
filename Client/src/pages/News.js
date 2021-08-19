@@ -50,6 +50,9 @@ const News = (props) => {
           </Fade>
         </Container>
       </div>
+      <br />
+      <br />
+      <br />
       <Footer></Footer>
     </>
   );

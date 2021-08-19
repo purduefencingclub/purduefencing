@@ -58,7 +58,11 @@ const Post = (props) => {
       <br />
       <Container className="join-content-container">
         <Card>
-          <Card.Img variant="top" src={imagePath} />
+          <Card.Img
+            variant="top"
+            src={imagePath}
+            className="fencing-post-img"
+          />
           <Card.Body>
             <Card.Title>{thisPost.title}</Card.Title>
             <Card.Text>{thisPost.body}</Card.Text>
