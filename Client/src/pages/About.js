@@ -121,7 +121,6 @@ const About = () => (
           </Carousel>
         </Container>
 
-        <CarouselComponent />
         <br />
         <br />
         {/* <img src={leftfoil} /> */}
