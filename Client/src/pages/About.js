@@ -19,6 +19,7 @@ import downfoil from "../images/downfoil.png";
 import downepee from "../images/downepee.png";
 
 import Navigation from "../components/Navigation";
+import CarouselComponent from "../components/Carousel";
 import "../styles/index.css";
 
 const About = () => (
@@ -120,6 +121,7 @@ const About = () => (
           </Carousel>
         </Container>
 
+        <CarouselComponent />
         <br />
         <br />
         {/* <img src={leftfoil} /> */}

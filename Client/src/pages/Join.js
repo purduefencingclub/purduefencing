@@ -114,7 +114,7 @@ const Join = () => (
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="text-muted">
-                Tuesday, August 31st @ 2pm
+                Tuesday, August 31st @ 9pm
                 <br />
                 Location: Corec MP5
               </Card.Footer>
