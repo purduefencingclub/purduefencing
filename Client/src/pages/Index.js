@@ -9,7 +9,8 @@ import { Visible, Hidden } from "react-grid-system";
 
 import fencingpic8 from "../images/fencingpic8.jpg";
 import fencingpic6 from "../images/fencingpic5.jpg";
-import callout from "../images/callout.jpeg";
+import callout from "../images/callout2.png";
+import callout1 from "../images/Lunge group.png";
 
 import uprightfoil from "../images/uprightfoil2.png";
 import foildivider from "../images/foildivider1.png";
@@ -105,12 +106,12 @@ const Index = () => (
                 The Purdue Fencing club welcomes anyone regardless of skill
                 level. If you're new and want to give fencing a try, we hold a
                 beginner's class to teach the basics of all three disciplines of
-                fencing. The class is instructed by our own members. If you're
-                experienced, join a practice and start fencing with us!
+                fencing. The class is instructed by our own members. We had a
+                great time at our first beginner's class this year!
               </p>
             </Col>
             <Col>
-              <img src={fencingpic8} width="100%" />
+              <img src={callout1} width="100%" />
             </Col>
           </Row>
         </Fade>
@@ -142,14 +143,14 @@ const Index = () => (
               <Visible xs>
                 <br />
               </Visible>
-              <h2>Come to Our Club Callout for Fall 2021!</h2>
+              <h2>Thanks For Coming to Our Fall 2021 Club Callout!</h2>
               <br />
               <p className="fencing-text">
-                PFC is holding our annual club callout on{" "}
-                <b>Tuesday, August 31st</b>, at MP5 in the Corec. We will be
-                demonstrating fencing bouts, introducing members, and answering
-                any questions you may have. All are welcome! We hope to see you
-                there.
+                We had a blast at the club callout! This was our biggest to
+                date. Thank you to those who came! If you weren't able to make
+                it, you are still more than welcome to join in on one of our
+                beginner's classes. Click <a href="/join">here</a> for more
+                information.
               </p>
             </Col>
           </Row>

@@ -12,7 +12,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import Fade from "react-reveal";
 import image1 from "../images/image1.jpeg";
 import divider from "../images/divider1.png";
-import beginner from "../images/beginner.jpeg";
+import beginner from "../images/Lunge group.png";
 import rightsaber from "../images/rightsaber1.png";
 import rightfoil from "../images/rightfoil.png";
 
@@ -74,7 +74,7 @@ const Join = () => (
           </Col>
         </Hidden>
       </Row>
-      <Container>
+      {/* <Container>
         <br />
         <Row xs={1} md={3} className="g-4">
           <Col>
@@ -142,11 +142,8 @@ const Join = () => (
             </Card>
           </Col>
         </Row>
-      </Container>
-      <br />
-      <br />
-      <br />
-      <h1 className="text-center">OPPORTUNITIES FOR BEGINNERS</h1>
+      </Container> */}
+      {/* <h1 className="text-center">OPPORTUNITIES FOR BEGINNERS</h1> */}
       <Container>
         <hr></hr>
         <br />
@@ -174,7 +171,7 @@ const Join = () => (
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="text-muted">
-                Next Class: September 2nd 9-10:30pm
+                Next Class: September 13th 9-10:30pm
                 <br />
                 Location: Corec MP5
               </Card.Footer>

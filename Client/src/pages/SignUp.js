@@ -26,8 +26,8 @@ const SignUp = () => (
     <div>
       <Container className="fencing-body">
         <h1>
-          The next beginner's practice session is: Thursday, September 2nd, at
-          MP5 in the Corec.
+          The next beginner's practice session is: Thursday, September 13th,
+          9:00-10:30pm at MP5 in the Corec.
         </h1>
         <br />
         <hr></hr>
